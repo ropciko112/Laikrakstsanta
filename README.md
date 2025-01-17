@@ -170,7 +170,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas.</p>
+        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. Lapa paredzēta kā joks un nav jāuztver nopietni :) </p>
     </footer>
 </body>
 </html>
