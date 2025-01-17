@@ -168,7 +168,6 @@
         <div class="footer-joke-text">Dienas Joks</div>
         <img class="footer-image" src="https://i.redd.it/97hzmg9f0kde1.jpeg" alt="Dienas Joks">
     </div>
-
     <footer>
         <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas.</p>
     </footer>
