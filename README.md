@@ -123,15 +123,15 @@
 </head>
 <body>
     <header>
-        <div class="header-left">Nr. 4</div> <!-- Numurs kreisajā pusē -->
+        <div class="header-left">Nr. 5</div> <!-- Numurs kreisajā pusē -->
         <h1>Laikraksts ANTA</h1>
-        <div class="header-right">17. janvāris, 2025</div> <!-- Datums labajā pusē -->
+        <div class="header-right">20. janvāris, 2025</div> <!-- Datums labajā pusē -->
     </header>
 
     <!-- Vārda dienas sadaļa -->
     <div class="section section-varda-diena">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienu svin: Tenis, Dravis</p>
+        <p>Šodien vārda dienu svin: Oļģerts, Orests, Aļģirds, Aļģis.</p>
     </div>
 
     <!-- Jaunās sadaļas -->
@@ -149,8 +149,8 @@
         </ul>
     </div>
 
-    <!-- Laikapstākļi -->
-    <div class="weather">
+       <!-- Laikapstākļi -->
+    <div class="widget widget-weather-parameters js-dataset widget-oneday widget-tomorrow">
         <div>
             <h3>Laikapstākļi šodienai</h3>
             <p>Gaisa temperatūra: +5°C</p>
@@ -162,6 +162,7 @@
             <p>Vēlāk būs neliels smidzinošs lietus.</p>
         </div>
     </div>
+
 
     <!-- Jaunais attēls -->
     <div>
