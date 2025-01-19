@@ -136,18 +136,17 @@
 
     <!-- Jaunās sadaļas -->
     <div class="section">
- <h3>Interesanti fakti par grāmatvedību</h3>
-<ul>
-    <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem. Tās pamatprincipi, piemēram, ienākumu un izdevumu uzskaites veidi, ir radīti jau pirms vairāk nekā 5 000 gadiem.</li>
-    <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli. Katrs grāmatvedības darījums tiek ierakstīts divos kontos - debetā un kreditā.</li>
-    <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu. Viņi izseko uzņēmuma ienākumiem un izdevumiem, lai nodrošinātu, ka tiek ievēroti visi nodokļu likumi un noteikumi.</li>
-    <li><strong>Starptautiskie grāmatvedības standarti:</strong> Ar globalizāciju ir pieaudzis nepieciešamība pēc vienotiem grāmatvedības standartiem. Starptautiskie grāmatvedības standarti (IFRS) ir kļuvuši par būtisku instrumentu uzņēmumu finanšu pārskatu sagatavošanā visā pasaulē.</li>
-    <li><strong>Grāmatvedība un tehnoloģijas:</strong> Mūsdienās grāmatvedība ir cieši saistīta ar tehnoloģijām. Arvien vairāk tiek izmantotas automatizētas grāmatvedības programmas un mākoņdatošanas risinājumi, lai veiktu uzskaiti un sagatavotu finanšu pārskatus.</li>
-    <li><strong>Grāmatvedība palīdz uzņēmuma vadīšanā:</strong> Grāmatvedība nav tikai par finanšu uzskaiti. Tā ir svarīga uzņēmuma vadības sastāvdaļa, kas palīdz pieņemt lēmumus par izdevumiem, investīcijām un izaugsmi.</li>
-    <li><strong>Grāmatvedība un uzņēmuma dzīvotspēja:</strong> Uzņēmumi, kuriem nav skaidri noteiktas grāmatvedības procedūras, bieži vien saskaras ar finanšu problēmām. Pareiza grāmatvedība palīdz uzņēmumiem nodrošināt savu finansiālo dzīvotspēju un sekmē izaugsmi.</li>
-    <li><strong>Grāmatvedība un budžetēšana:</strong> Grāmatvedība ir būtiska sastāvdaļa arī budžeta plānošanā. Ar precīzu uzskaiti var saprast, kā nauda tiek tērēta un kur ir iespējas uzlabot naudas plūsmu.</li>
-</ul>
-
+        <h3>Interesanti fakti par grāmatvedību</h3>
+        <ul>
+            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem. Tās pamatprincipi, piemēram, ienākumu un izdevumu uzskaites veidi, ir radīti jau pirms vairāk nekā 5 000 gadiem.</li>
+            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli. Katrs grāmatvedības darījums tiek ierakstīts divos kontos - debetā un kreditā.</li>
+            <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu. Viņi izseko uzņēmuma ienākumiem un izdevumiem, lai nodrošinātu, ka tiek ievēroti visi nodokļu likumi un noteikumi.</li>
+            <li><strong>Starptautiskie grāmatvedības standarti:</strong> Ar globalizāciju ir pieaudzis nepieciešamība pēc vienotiem grāmatvedības standartiem. Starptautiskie grāmatvedības standarti (IFRS) ir kļuvuši par būtisku instrumentu uzņēmumu finanšu pārskatu sagatavošanā visā pasaulē.</li>
+            <li><strong>Grāmatvedība un tehnoloģijas:</strong> Mūsdienās grāmatvedība ir cieši saistīta ar tehnoloģijām. Arvien vairāk tiek izmantotas automatizētas grāmatvedības programmas un mākoņdatošanas risinājumi, lai veiktu uzskaiti un sagatavotu finanšu pārskatus.</li>
+            <li><strong>Grāmatvedība palīdz uzņēmuma vadīšanā:</strong> Grāmatvedība nav tikai par finanšu uzskaiti. Tā ir svarīga uzņēmuma vadības sastāvdaļa, kas palīdz pieņemt lēmumus par izdevumiem, investīcijām un izaugsmi.</li>
+            <li><strong>Grāmatvedība un uzņēmuma dzīvotspēja:</strong> Uzņēmumi, kuriem nav skaidri noteiktas grāmatvedības procedūras, bieži vien saskaras ar finanšu problēmām. Pareiza grāmatvedība palīdz uzņēmumiem nodrošināt savu finansiālo dzīvotspēju un sekmē izaugsmi.</li>
+            <li><strong>Grāmatvedība un budžetēšana:</strong> Grāmatvedība ir būtiska sastāvdaļa arī budžeta plānošanā. Ar precīzu uzskaiti var saprast, kā nauda tiek tērēta un kur ir iespējas uzlabot naudas plūsmu.</li>
+        </ul>
     </div>
 
     <!-- Laikapstākļi -->
@@ -164,10 +163,9 @@
         </div>
     </div>
 
-    <!-- Dienas Joks attēls lapas apakšā -->
+    <!-- Jaunais attēls -->
     <div>
-        <div class="footer-joke-text">Dienas Joks</div>
-        <img class="footer-image" src="https://i.redd.it/97hzmg9f0kde1.jpeg" alt="Dienas Joks">
+        <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
     </div>
 
     <footer>
