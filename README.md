@@ -104,6 +104,7 @@
             border-radius: 8px;
         }
 
+        /* Stilizēt tabulas */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -115,7 +116,7 @@
         }
 
         th, td {
-            padding: 8px;
+            padding: 5px 10px;
             text-align: center;
         }
 
@@ -123,6 +124,10 @@
             background-color: #f2f2f2;
         }
 
+        .facts-list {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -141,10 +146,17 @@
     <!-- Jaunās sadaļas -->
     <div class="section">
         <h3>Interesanti fakti par grāmatvedību</h3>
-        <ul>
-            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē...</li>
-            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma...</li>
-            <!-- citi fakti -->
+        <ul class="facts-list">
+            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem.</li>
+            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli.</li>
+            <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu, nodrošinot uzņēmumu atbilstību likumiem.</li>
+            <li><strong>Starptautiskie grāmatvedības standarti:</strong> Starptautiskie grāmatvedības standarti (IFRS) tiek izmantoti uzņēmumu finanšu pārskatu sagatavošanai globālā mērogā.</li>
+            <li><strong>Grāmatvedība un tehnoloģijas:</strong> Mūsdienās grāmatvedība ir cieši saistīta ar tehnoloģijām, un arvien vairāk tiek izmantotas automatizētas grāmatvedības programmas.</li>
+            <li><strong>Grāmatvedība palīdz uzņēmuma vadīšanā:</strong> Grāmatvedība ir svarīga uzņēmuma vadības sastāvdaļa, kas palīdz pieņemt lēmumus par izdevumiem, investīcijām un izaugsmi.</li>
+            <li><strong>Grāmatvedība un uzņēmuma dzīvotspēja:</strong> Pareiza grāmatvedība palīdz uzņēmumiem nodrošināt savu finansiālo dzīvotspēju un sekmē izaugsmi.</li>
+            <li><strong>Grāmatvedība un budžetēšana:</strong> Grāmatvedība ir būtiska sastāvdaļa arī budžeta plānošanā, kas palīdz saprast, kā nauda tiek tērēta un kur ir iespējas uzlabot naudas plūsmu.</li>
+            <li><strong>Grāmatvedība un finanšu pārskati:</strong> Grāmatvedība veido pamatu uzņēmumu finanšu pārskatiem, kas palīdz noteikt uzņēmuma peļņu vai zaudējumus.</li>
+            <li><strong>Grāmatvedība un nākotnes prognozes:</strong> Grāmatveži izmanto datus, lai veiktu prognozes un palīdzētu uzņēmumiem plānot nākotnes izdevumus un ienākumus.</li>
         </ul>
     </div>
 
