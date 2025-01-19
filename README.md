@@ -76,7 +76,6 @@
             line-height: 1.6;
         }
 
-        /* Sadaļa "Vārda diena" */
         .section-varda-diena h3 {
             text-align: left;
             font-size: 2em;
@@ -84,7 +83,6 @@
             margin-bottom: 10px;
         }
 
-        /* Kājene */
         footer {
             background-color: #d8cfc4;
             text-align: center;
@@ -106,6 +104,25 @@
             border-radius: 8px;
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
     </style>
 </head>
 <body>
@@ -125,24 +142,84 @@
     <div class="section">
         <h3>Interesanti fakti par grāmatvedību</h3>
         <ul>
-            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem. Tās pamatprincipi, piemēram, ienākumu un izdevumu uzskaites veidi, ir radīti jau pirms vairāk nekā 5 000 gadiem.</li>
-            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli. Katrs grāmatvedības darījums tiek ierakstīts divos kontos - debetā un kreditā.</li>
+            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē...</li>
+            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma...</li>
             <!-- citi fakti -->
         </ul>
     </div>
 
-    <!-- Laikapstākļi -->
-    <div class="widget widget-weather-parameters js-dataset widget-oneday widget-tomorrow">
-        <div>
-            <h3>Laikapstākļi šodienai</h3>
-            <p id="temperature">Gaisa temperatūra: ...</p>
-            <p id="description">Debesis: ...</p>
-            <p id="wind">Vējš: ...</p>
-        </div>
-        <div>
-            <h3>Prognoze</h3>
-            <p id="forecast">...Prognoze tiek iegūta...</p>
-        </div>
+    <!-- Laikapstākļi prognoze -->
+    <div class="section">
+        <h3>Laikapstākļi prognoze 20. janvārī Rīgā</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Laiks</th>
+                    <th>Gaisa temperatūra (°C)</th>
+                    <th>Vēja brāzmas (m/s)</th>
+                    <th>Vēja virziens</th>
+                    <th>Nokrišņi (mm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2:00</td>
+                    <td>+3</td>
+                    <td>7</td>
+                    <td>ZR</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5:00</td>
+                    <td>+3</td>
+                    <td>4</td>
+                    <td>ZR</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td>+3</td>
+                    <td>3</td>
+                    <td>R</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>+3</td>
+                    <td>3</td>
+                    <td>R</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>+3</td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>17:00</td>
+                    <td>+3</td>
+                    <td>5</td>
+                    <td>DA</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                    <td>+2</td>
+                    <td>8</td>
+                    <td>DA</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>23:00</td>
+                    <td>+2</td>
+                    <td>8</td>
+                    <td>DA</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- Jaunais attēls -->
@@ -153,32 +230,5 @@
     <footer>
         <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. Lapa paredzēta kā joks un nav jāuztver nopietni :)</p>
     </footer>
-
-    <script>
-        // OpenWeatherMap API atslēga
-        const apiKey = 'TAVA_API_ATSLEGA'; // Aizvieto ar savu API atslēgu
-        const city = 'Riga'; // Izvēlies pilsētu
-
-        // Funkcija, lai iegūtu laikapstākļus no API
-        function getWeather() {
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=lv&appid=${apiKey}`)
-                .then(response => response.json())
-                .then(data => {
-                    // Atjaunojam datus HTML lapā
-                    document.getElementById('temperature').innerText = `Gaisa temperatūra: ${data.main.temp}°C`;
-                    document.getElementById('description').innerText = `Debesis: ${data.weather[0].description}`;
-                    document.getElementById('wind').innerText = `Vējš: ${data.wind.speed} m/s`;
-                    document.getElementById('forecast').innerText = `Prognoze: ${data.weather[0].description}`;
-                })
-                .catch(error => {
-                    console.error('Kļūda iegūstot laikapstākļus:', error);
-                    document.querySelector('.widget').innerHTML = '<p>Neizdevās iegūt laikapstākļus.</p>';
-                });
-        }
-
-        // Iegūt laikapstākļus pēc lapas ielādes
-        window.onload = getWeather;
-    </script>
-
 </body>
 </html>
