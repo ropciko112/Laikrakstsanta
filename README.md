@@ -136,17 +136,18 @@
 
     <!-- Jaunās sadaļas -->
     <div class="section">
-        <h3>Interesanti fakti par Piekdienām</h3>
-        <ul>
-            <li><strong>Nosaukuma izcelsme:</strong> Piektdienas nosaukums daudzās valodās ir saistīts ar mīlestības un skaistuma dievieti. Latviešu valodā "piektdiena" norāda uz piekto nedēļas dienu. Angliski "Friday" cēlies no skandināvu dievietes Frigg, savukārt romiešu kultūrā piektdiena tika veltīta Venerai.</li>
-            <li><strong>Piektdiena 13. datums:</strong> Piektdiena, kas iekrīt 13. datumā, tiek uzskatīta par neveiksmīgu dienu daudzās kultūrās. Šī māņticība ir saistīta ar kristietību (Jēzus tika krustā sists piektdienā) un skaitļa 13 neuzticību.</li>
-            <li><strong>Lielā Piektdiena:</strong> Kristīgajā tradīcijā Lielā Piektdiena ir diena, kad piemin Jēzus Kristus krustā sišanu. Tā ir svētku diena daudzās valstīs.</li>
-            <li><strong>Darba nedēļas beigas:</strong> Piektdiena bieži tiek uzskatīta par pēdējo darba dienu pirms brīvdienām. Daudzās kultūrās tā ir saistīta ar atpūtu un izklaidi.</li>
-            <li><strong>"Melnais piektdiena" (Black Friday):</strong> Dienu pēc Pateicības dienas ASV (novembra ceturtā ceturtdiena) sauc par Melnā piektdienu. Tā ir viena no lielākajām iepirkšanās dienām pasaulē.</li>
-            <li><strong>Slaveni kultūras darbi:</strong> Rebekas Blekas dziesma "Friday" (2011) kļuva par interneta sensāciju un memi, lai gan tika kritizēta par tās vienkāršību.</li>
-            <li><strong>Piektdienas simbolika:</strong> Dažās kultūrās piektdiena tiek uzskatīta par īpaši veiksmīgu dienu, piemēram, kāzām vai jaunu projektu uzsākšanai.</li>
-            <li><strong>"TGIF" saīsinājums:</strong> Frāze "Thank God It's Friday" (Paldies Dievam, ir piektdiena) ir populāra daudzās valstīs, izceļot prieku par darba nedēļas beigām.</li>
-        </ul>
+ <h3>Interesanti fakti par grāmatvedību</h3>
+<ul>
+    <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem. Tās pamatprincipi, piemēram, ienākumu un izdevumu uzskaites veidi, ir radīti jau pirms vairāk nekā 5 000 gadiem.</li>
+    <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli. Katrs grāmatvedības darījums tiek ierakstīts divos kontos - debetā un kreditā.</li>
+    <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu. Viņi izseko uzņēmuma ienākumiem un izdevumiem, lai nodrošinātu, ka tiek ievēroti visi nodokļu likumi un noteikumi.</li>
+    <li><strong>Starptautiskie grāmatvedības standarti:</strong> Ar globalizāciju ir pieaudzis nepieciešamība pēc vienotiem grāmatvedības standartiem. Starptautiskie grāmatvedības standarti (IFRS) ir kļuvuši par būtisku instrumentu uzņēmumu finanšu pārskatu sagatavošanā visā pasaulē.</li>
+    <li><strong>Grāmatvedība un tehnoloģijas:</strong> Mūsdienās grāmatvedība ir cieši saistīta ar tehnoloģijām. Arvien vairāk tiek izmantotas automatizētas grāmatvedības programmas un mākoņdatošanas risinājumi, lai veiktu uzskaiti un sagatavotu finanšu pārskatus.</li>
+    <li><strong>Grāmatvedība palīdz uzņēmuma vadīšanā:</strong> Grāmatvedība nav tikai par finanšu uzskaiti. Tā ir svarīga uzņēmuma vadības sastāvdaļa, kas palīdz pieņemt lēmumus par izdevumiem, investīcijām un izaugsmi.</li>
+    <li><strong>Grāmatvedība un uzņēmuma dzīvotspēja:</strong> Uzņēmumi, kuriem nav skaidri noteiktas grāmatvedības procedūras, bieži vien saskaras ar finanšu problēmām. Pareiza grāmatvedība palīdz uzņēmumiem nodrošināt savu finansiālo dzīvotspēju un sekmē izaugsmi.</li>
+    <li><strong>Grāmatvedība un budžetēšana:</strong> Grāmatvedība ir būtiska sastāvdaļa arī budžeta plānošanā. Ar precīzu uzskaiti var saprast, kā nauda tiek tērēta un kur ir iespējas uzlabot naudas plūsmu.</li>
+</ul>
+
     </div>
 
     <!-- Laikapstākļi -->
