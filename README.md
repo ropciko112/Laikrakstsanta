@@ -70,6 +70,21 @@
             border-top: 2px solid #3e3e3e;
             margin-top: 40px;
         }
+        /* Jauni stili dienas jokam */
+        .footer-joke-text {
+            font-size: 1.5em;
+            color: #4a2c1b;
+            font-weight: 700;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .footer-image {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -106,6 +121,12 @@
     <div class="section">
         <h3>Laikapstākļi Rīgā</h3>
         <div id="weather">Ielādē laikapstākļus...</div>
+    </div>
+
+    <!-- Dienas Joks -->
+    <div>
+        <div class="footer-joke-text">Dienas Joks</div>
+        <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
     </div>
 
     <footer>
@@ -145,10 +166,5 @@
                 document.getElementById("weather").innerText = "Kļūda, mēģiniet vēlreiz.";
             });
     </script>
-     <!-- Dienas Joks attēls lapas apakšā -->
-    <div>
-        <div class="footer-joke-text">Dienas Joks</div>
-        <img class="footer-image" src="https://i.redd.it/97hzmg9f0kde1.jpeg" alt="Dienas Joks">
-    </div>
 </body>
 </html>
