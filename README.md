@@ -8,7 +8,7 @@
         /* CSS Stili */
         body {
             font-family: "Georgia", "Times New Roman", serif;
-            background-color: #f5f5f5;
+            background-color: #a1832b;
             margin: 0;
             padding: 0;
             color: #333;
@@ -117,14 +117,32 @@
             height: auto;
             border: 2px solid #ccc;
         }
+        
+        /* Dienas joks sadaļai */
+        .jokes-section {
+            padding: 30px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .jokes-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="header-left">Nr. 5</div>
+        <div class="header-left">Nr. 6</div>
         <h1>Laikraksts ANTA</h1>
-        <div class="header-right"><span id="current-time">Ielādē laiku...</span></div>
+        <div class="header-right">
+            <span id="current-date">Ielādē datumu...</span><br>
+            <span id="current-time">Ielādē laiku...</span>
+        </div>
     </header>
     
     <nav>
@@ -137,19 +155,43 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>&Scaron;odien vārda dienu svin: Agnese, Agnija, Agne.</p>
+        <p>Šodien vārda dienas svin Agnese, Agnija, Agne.</p>
     </div>
 
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par grāmatvedību</h3>
+       <h3>Interesanti fakti par vārdu ANTA</h3>
         <ul class="facts-list">
-            <li>
-                <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
-            </li>
-            <li>
-                <p><strong>Vārda nozīme</strong>: Vārds "Anta" bieži tiek saistīts ar spēku un dzīvotspēju. Dažās interpretācijās tas var būt arī saistīts ar dabu, īpa&scaron;i augiem, un dzīvotspējīgām īpa&scaron;ībām.</p>
-            </li>
+            <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
+</li>
+<li>
+<p><strong>Vārda nozīme</strong>: Vārds "Anta" bieži tiek saistīts ar spēku un dzīvotspēju. Dažās interpretācijās tas var būt arī saistīts ar dabu, īpa&scaron;i augiem, un dzīvotspējīgām īpa&scaron;ībām.</p>
+</li>
+<li>
+<p><strong>Vārda popularitāte</strong>: "Anta" ir populārs sievie&scaron;u vārds Latvijā, Lietuvā un Igaunijā, īpa&scaron;i 20. gadsimtā.</p>
+</li>
+<li>
+<p><strong>Sinonīmi un variācijas</strong>: "Anta" ir saistīts ar vārdiem "Anita" un "Anna", kas bieži tiek izmantoti dažādās pasaules daļās. Vārdiem ir līdzīgas saknes un bieži tiek uzskatīti par variācijām vienam un tam pa&scaron;am nosaukumam.</p>
+</li>
+<li>
+<p><strong>Anta kā ģeogrāfisks nosaukums</strong>: Vārds "Anta" tiek izmantots arī ģeogrāfiskos nosaukumos, piemēram, vairākās pilsētās un ciemos visā pasaulē.</p>
+</li>
+<li>
+<p><strong>Anta senās vēsturē</strong>: Senajā Romā un Grieķijā tika izmantoti līdzīgi vārdi, kas bieži apzīmēja sievietes, kas bija saistītas ar mītiem vai simbolizēja noteiktas īpa&scaron;ības, piemēram, auglību vai mīlestību.</p>
+</li>
+<li>
+<p><strong>Anta kā dāvanu vai simbolu</strong>: Dažās kultūrās vārds "Anta" tiek uzskatīts par īpa&scaron;u simbolu vai vārdiskā dāvana, kas nes pozitīvas nozīmes, piemēram, dzīvotspēju vai stiprību.</p>
+</li>
+<li>
+<p><strong>Vārda saistība ar mitoloģiju</strong>: Dažās mitoloģiskās tradīcijās vārds "Anta" tiek saistīts ar dažādiem dieviem vai varoņiem, kas simbolizē dzīvotspēju vai dziedinā&scaron;anu.</p>
+</li>
+<li>
+<p><strong>Vārds "Anta" citās valodās</strong>: Dažādās valodās var būt līdzīgas variācijas vārda "Anta", kas izrādās populāras, piemēram, Spānijā (Anta), Polijā, Krievijā un citās Eiropas valstīs.</p>
+</li>
+<li>
+<p><strong>Anta kā personvārds un tēls literatūrā</strong>: Vārds "Anta" bieži sastopams literatūras darbos, kur sievie&scaron;u varoņi ar &scaron;o vārdu var simbolizēt varenību, spēju uzvarēt grūtības un radīt izmaiņas savā dzīvē.</p>
+</li>
+            <!-- Pievienojiet citus faktus -->
         </ul>
     </div>
 
@@ -160,24 +202,29 @@
     </div>
 
     <!-- Dienas Joks -->
-    <div id="joks">
-        <div class="footer-joke-text">Dienas Joks</div>
+    <div id="joks" class="jokes-section">
+        <h3>Dienas Joks</h3>
         <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hbp2q.jpg" alt="u/Low-Sir-7440 - vins" />
     </div>
 
     <footer>
-        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāts kā joks un nav jāuztver nopietni!</p>
+        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
     </footer>
 
     <script>
-        // Funkcija, lai parādītu pašreizējo laiku
-        function updateTime() {
+        // Funkcija, lai parādītu pašreizējo laiku un datumu
+        function updateTimeAndDate() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
             const timeString = `${hours}:${minutes}:${seconds}`;
+            const dateString = `${day}.${month}.${year}`;
             document.getElementById('current-time').textContent = timeString;
+            document.getElementById('current-date').textContent = dateString;
         }
 
         // Iegūt laikapstākļus no API
@@ -202,8 +249,8 @@
                 });
         }
 
-        // Atjaunot laiku katru sekundi
-        setInterval(updateTime, 1000);
+        // Atjaunot laiku un datumu katru sekundi
+        setInterval(updateTimeAndDate, 1000);
 
         // Iegūt laikapstākļus uzreiz
         getWeather();
