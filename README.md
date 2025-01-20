@@ -97,7 +97,7 @@
 </head>
 <body>
     <header>
-        <div class="header-left">Nr. 6</div>
+        <div class="header-left">Nr. 5</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right"><span id="current-time">Ielādē laiku...</span></div>
     </header>
