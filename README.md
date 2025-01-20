@@ -1,124 +1,107 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laikraksts ANTA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* CSS Stili */
         body {
-            font-family: 'Times New Roman', serif;
-            background-color: #f4f1e1;
-            color: #3e3e3e;
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-        h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
+
         header {
-            background-color: #d8cfc4;
-            padding: 20px 10px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
             text-align: center;
-            border-bottom: 2px solid #3e3e3e;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        header h1 {
-            font-size: 3.5em;
-            text-transform: uppercase;
-            color: #5a3d2f;
-            letter-spacing: 5px;
-            flex: 1;
-            text-align: center;
-        }
+
         .header-left, .header-right {
-            font-size: 1em;
-            color: #5a3d2f;
+            font-size: 14px;
         }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
         nav {
-            text-align: center;
-            background-color: #d8cfc4;
+            background-color: #444;
             padding: 10px;
+            text-align: center;
         }
+
         nav a {
-            color: #5a3d2f;
-            font-size: 1.1em;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #ccc;
         }
+
         .section {
-            margin-top: 30px;
             padding: 20px;
-            background-color: #f7f7f7;
+            background-color: white;
+            margin: 10px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .section h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.2em;
-            color: #4a2c1b;
-            font-weight: 700;
-            text-align: center;
+
+        .facts-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .facts-list li {
             margin-bottom: 10px;
         }
-        .section p {
-            font-size: 1.1em;
-            color: #5a3d2f;
-            line-height: 1.6;
+
+        #weather {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        ul.facts-list {
-            list-style-type: decimal;
-            margin-left: 20px;
-        }
+
         footer {
-            background-color: #d8cfc4;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 15px 0;
-            font-size: 0.9em;
-            color: #9b7e6f;
-            border-top: 2px solid #3e3e3e;
-            margin-top: 40px;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
+
         .footer-joke-text {
-            font-size: 1.5em;
-            color: #4a2c1b;
-            font-weight: 700;
-            margin-top: 30px;
+            font-size: 18px;
             text-align: center;
         }
+
         .footer-image {
             display: block;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-        /* Responsīvs dizains */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            nav {
-                font-size: 0.9em;
-            }
-            .footer-joke-text {
-                font-size: 1.2em;
-            }
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-left">Nr. 5</div>
+        <div class="header-left">Nr. 6</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right"><span id="current-time">Ielādē laiku...</span></div>
     </header>
-
+    
     <nav>
         <a href="#vardadiena">Vārda diena</a>
         <a href="#fakti">Interesanti fakti</a>
@@ -127,30 +110,26 @@
     </nav>
 
     <!-- Vārda diena -->
-    <div class="section" id="vardadiena">
+    <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienu svin: Oļģerts, Orests, Aļģirds, Aļģis.</p>
+        <p>&Scaron;odien vārda dienu svin: Agnese, Agnija, Agne.</p>
     </div>
 
     <!-- Interesanti fakti -->
-    <div class="section" id="fakti">
+    <div id="fakti" class="section">
         <h3>Interesanti fakti par grāmatvedību</h3>
-         <ul class="facts-list">
-            <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem.</li>
-            <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli.</li>
-            <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu, nodrošinot uzņēmumu atbilstību likumiem.</li>
-            <li><strong>Starptautiskie grāmatvedības standarti:</strong> Starptautiskie grāmatvedības standarti (IFRS) tiek izmantoti uzņēmumu finanšu pārskatu sagatavošanai globālā mērogā.</li>
-            <li><strong>Grāmatvedība un tehnoloģijas:</strong> Mūsdienās grāmatvedība ir cieši saistīta ar tehnoloģijām, un arvien vairāk tiek izmantotas automatizētas grāmatvedības programmas.</li>
-            <li><strong>Grāmatvedība palīdz uzņēmuma vadīšanā:</strong> Grāmatvedība ir svarīga uzņēmuma vadības sastāvdaļa, kas palīdz pieņemt lēmumus par izdevumiem, investīcijām un izaugsmi.</li>
-            <li><strong>Grāmatvedība un uzņēmuma dzīvotspēja:</strong> Pareiza grāmatvedība palīdz uzņēmumiem nodrošināt savu finansiālo dzīvotspēju un sekmē izaugsmi.</li>
-            <li><strong>Grāmatvedība un budžetēšana:</strong> Grāmatvedība ir būtiska sastāvdaļa arī budžeta plānošanā, kas palīdz saprast, kā nauda tiek tērēta un kur ir iespējas uzlabot naudas plūsmu.</li>
-            <li><strong>Grāmatvedība un finanšu pārskati:</strong> Grāmatvedība veido pamatu uzņēmumu finanšu pārskatiem, kas palīdz noteikt uzņēmuma peļņu vai zaudējumus.</li>
-            <li><strong>Grāmatvedība un nākotnes prognozes:</strong> Grāmatveži izmanto datus, lai veiktu prognozes un palīdzētu uzņēmumiem plānot nākotnes izdevumus un ienākumus.</li>
+        <ul class="facts-list">
+            <li>
+                <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
+            </li>
+            <li>
+                <p><strong>Vārda nozīme</strong>: Vārds "Anta" bieži tiek saistīts ar spēku un dzīvotspēju. Dažās interpretācijās tas var būt arī saistīts ar dabu, īpa&scaron;i augiem, un dzīvotspējīgām īpa&scaron;ībām.</p>
+            </li>
         </ul>
     </div>
 
     <!-- Laikapstākļi -->
-    <div class="section" id="laikapstakli">
+    <div id="laikapstakli" class="section">
         <h3>Laikapstākļi Rīgā</h3>
         <div id="weather">Ielādē laikapstākļus...</div>
     </div>
@@ -158,7 +137,7 @@
     <!-- Dienas Joks -->
     <div id="joks">
         <div class="footer-joke-text">Dienas Joks</div>
-        <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hbp2q.jpg" alt="u/Low-Sir-7440 - vins" />
     </div>
 
     <footer>
@@ -166,37 +145,43 @@
     </footer>
 
     <script>
-        // Reāllaika pulkstenis
+        // Funkcija, lai parādītu pašreizējo laiku
         function updateTime() {
             const now = new Date();
-            document.getElementById('current-time').textContent = now.toLocaleTimeString('lv-LV');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('current-time').textContent = timeString;
         }
+
+        // Iegūt laikapstākļus no API
+        function getWeather() {
+            const weatherElement = document.getElementById('weather');
+            const apiKey = "1b5e2264709b5eacd217f25ebf6dc09a"; // Tava API atslēga
+            const city = "Riga";
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=lv`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.main) {
+                        weatherElement.textContent = `Šodien Rīgā: ${data.weather[0].description}, ${data.main.temp}°C`;
+                    } else {
+                        weatherElement.textContent = "Nevarēja iegūt laikapstākļus.";
+                    }
+                })
+                .catch(error => {
+                    weatherElement.textContent = "Kļūda, mēģini vēlreiz.";
+                    console.error("Error fetching weather data:", error);
+                });
+        }
+
+        // Atjaunot laiku katru sekundi
         setInterval(updateTime, 1000);
-        updateTime();
 
-        // Laikapstākļu prognoze
-        const apiKey = "1b5e2264709b5eacd217f25ebf6dc09a";
-        const city = "Riga";
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=lv`;
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                if (data.cod === 200) {
-                    const weatherDiv = document.getElementById("weather");
-                    weatherDiv.innerHTML = `
-                        <p><strong>Pilsēta:</strong> ${data.name}</p>
-                        <p><strong>Temperatūra:</strong> ${data.main.temp} °C</p>
-                        <p><strong>Laikapstākļi:</strong> ${data.weather[0].description}</p>
-                        <p><strong>Vēja ātrums:</strong> ${data.wind.speed} m/s</p>
-                    `;
-                } else {
-                    document.getElementById("weather").innerText = "Neizdevās ielādēt laikapstākļus.";
-                }
-            })
-            .catch(error => {
-                document.getElementById("weather").innerText = "Kļūda, mēģiniet vēlreiz.";
-            });
+        // Iegūt laikapstākļus uzreiz
+        getWeather();
     </script>
 </body>
 </html>
