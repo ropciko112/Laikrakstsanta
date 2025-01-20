@@ -37,6 +37,20 @@
             font-size: 1em;
             color: #5a3d2f;
         }
+        nav {
+            text-align: center;
+            background-color: #d8cfc4;
+            padding: 10px;
+        }
+        nav a {
+            color: #5a3d2f;
+            font-size: 1.1em;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .section {
             margin-top: 30px;
             padding: 20px;
@@ -70,7 +84,6 @@
             border-top: 2px solid #3e3e3e;
             margin-top: 40px;
         }
-        /* Jauni stili dienas jokam */
         .footer-joke-text {
             font-size: 1.5em;
             color: #4a2c1b;
@@ -85,6 +98,18 @@
             max-width: 500px;
             border-radius: 10px;
         }
+        /* Responsīvs dizains */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            nav {
+                font-size: 0.9em;
+            }
+            .footer-joke-text {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,16 +119,23 @@
         <div class="header-right"><span id="current-time">Ielādē laiku...</span></div>
     </header>
 
+    <nav>
+        <a href="#vardadiena">Vārda diena</a>
+        <a href="#fakti">Interesanti fakti</a>
+        <a href="#laikapstakli">Laikapstākļi</a>
+        <a href="#joks">Dienas Joks</a>
+    </nav>
+
     <!-- Vārda diena -->
-    <div class="section">
+    <div class="section" id="vardadiena">
         <h3>Vārda diena</h3>
         <p>Šodien vārda dienu svin: Oļģerts, Orests, Aļģirds, Aļģis.</p>
     </div>
 
     <!-- Interesanti fakti -->
-    <div class="section">
+    <div class="section" id="fakti">
         <h3>Interesanti fakti par grāmatvedību</h3>
-        <ul class="facts-list">
+         <ul class="facts-list">
             <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem.</li>
             <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli.</li>
             <li><strong>Grāmatvedība un nodokļi:</strong> Grāmatveži bieži ir atbildīgi par nodokļu aprēķināšanu un nomaksu, nodrošinot uzņēmumu atbilstību likumiem.</li>
@@ -118,13 +150,13 @@
     </div>
 
     <!-- Laikapstākļi -->
-    <div class="section">
+    <div class="section" id="laikapstakli">
         <h3>Laikapstākļi Rīgā</h3>
         <div id="weather">Ielādē laikapstākļus...</div>
     </div>
 
     <!-- Dienas Joks -->
-    <div>
+    <div id="joks">
         <div class="footer-joke-text">Dienas Joks</div>
         <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
     </div>
