@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -84,8 +83,9 @@
             margin-bottom: 20px;
         }
 
+        /* Laikapstākļu sadaļa - caurspīdīgums */
         #weather {
-            background-color: #f0f0f0;
+            background-color: rgba(240, 240, 240, 0.8); /* Caurspīdīgs gaišais fons */
             padding: 15px;
             border-radius: 5px;
             font-size: 18px;
@@ -104,6 +104,11 @@
             bottom: 0;
         }
 
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
         .footer-joke-text {
             font-size: 18px;
             font-family: 'Georgia', serif;
@@ -117,7 +122,7 @@
             height: auto;
             border: 2px solid #ccc;
         }
-        
+
         /* Dienas joks sadaļai */
         .jokes-section {
             padding: 30px;
@@ -127,10 +132,15 @@
             width: 80%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .jokes-section img {
             max-width: 100%;
             border-radius: 10px;
+        }
+
+        /* Centrēts teksts footer */
+        .footer-text-center {
+            text-align: center;
         }
     </style>
 </head>
@@ -160,9 +170,9 @@
 
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-       <h3>Interesanti fakti par vārdu ANTA</h3>
+        <h3>Interesanti fakti par vārdu ANTA</h3>
         <ul class="facts-list">
-            <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
+           <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
 </li>
 <li>
 <p><strong>Vārda nozīme</strong>: Vārds "Anta" bieži tiek saistīts ar spēku un dzīvotspēju. Dažās interpretācijās tas var būt arī saistīts ar dabu, īpa&scaron;i augiem, un dzīvotspējīgām īpa&scaron;ībām.</p>
@@ -189,8 +199,7 @@
 <p><strong>Vārds "Anta" citās valodās</strong>: Dažādās valodās var būt līdzīgas variācijas vārda "Anta", kas izrādās populāras, piemēram, Spānijā (Anta), Polijā, Krievijā un citās Eiropas valstīs.</p>
 </li>
 <li>
-<p><strong>Anta kā personvārds un tēls literatūrā</strong>: Vārds "Anta" bieži sastopams literatūras darbos, kur sievie&scaron;u varoņi ar &scaron;o vārdu var simbolizēt varenību, spēju uzvarēt grūtības un radīt izmaiņas savā dzīvē.</p>
-</li>
+<p><strong>Anta kā personvārds un tēls literatūrā</strong>: Vārds "Anta" bieži sastopams literatūras darbos, kur sievie&scaron;u varoņi ar &scaron;o vārdu var simbolizēt varenību, spēju uzvarēt grūtības un radīt izmaiņas savā dzīvē.</p></li>
             <!-- Pievienojiet citus faktus -->
         </ul>
     </div>
@@ -208,7 +217,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
+        <p class="footer-text-center">&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
     </footer>
 
     <script>
