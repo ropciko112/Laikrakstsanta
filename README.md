@@ -7,20 +7,22 @@
     <style>
         /* CSS Stili */
         body {
-            font-family: "Arial", sans-serif;
-            background-color: #f4f4f4;
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #2c2c2c;
             color: white;
-            padding: 10px 20px;
+            padding: 20px 40px;
             text-align: center;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-family: 'Georgia', serif;
         }
 
         .header-left, .header-right {
@@ -28,8 +30,9 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 36px;
             margin: 0;
+            font-family: 'Georgia', serif;
         }
 
         nav {
@@ -40,43 +43,62 @@
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav a:hover {
-            color: #ccc;
+            color: #ddd;
         }
 
         .section {
-            padding: 20px;
+            padding: 30px;
             background-color: white;
-            margin: 10px;
-            border-radius: 8px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .facts-list {
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c2c2c;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ul.facts-list {
             list-style-type: none;
             padding-left: 0;
         }
 
-        .facts-list li {
-            margin-bottom: 10px;
+        ul.facts-list li {
+            margin-bottom: 20px;
         }
 
         #weather {
-            background-color: #ddd;
-            padding: 10px;
+            background-color: #f0f0f0;
+            padding: 15px;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+            border: 1px solid #ccc;
         }
 
         footer {
-            background-color: #333;
+            background-color: #2c2c2c;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px;
+            font-family: 'Georgia', serif;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -84,7 +106,8 @@
 
         .footer-joke-text {
             font-size: 18px;
-            text-align: center;
+            font-family: 'Georgia', serif;
+            margin-top: 10px;
         }
 
         .footer-image {
@@ -92,10 +115,12 @@
             margin: 10px auto;
             max-width: 100%;
             height: auto;
+            border: 2px solid #ccc;
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-left">Nr. 5</div>
         <h1>Laikraksts ANTA</h1>
