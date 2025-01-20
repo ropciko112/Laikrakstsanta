@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -71,10 +72,6 @@
             color: #5a3d2f;
             line-height: 1.6;
         }
-        ul.facts-list {
-            list-style-type: decimal;
-            margin-left: 20px;
-        }
         footer {
             background-color: #d8cfc4;
             text-align: center;
@@ -133,8 +130,7 @@
     </div>
 
     <!-- Interesanti fakti -->
-    <div class="section" id="fakti">
-        <h3>Interesanti fakti par grāmatvedību</h3>
+     <h3>Interesanti fakti par grāmatvedību</h3>
          <ul class="facts-list">
             <li><strong>Grāmatvedība ir sena profesija:</strong> Grāmatvedība ir viena no vecākajām profesijām pasaulē, kas izsekojama līdz pat senajiem Babilonijas un ēģiptiešu laikiem.</li>
             <li><strong>Dubultā ieraksta sistēma:</strong> Grāmatvedības pamatprincipu veido "dubultā ieraksta" sistēma, kuru 1494. gadā iepazīstināja itāļu matemātiķis un mācītājs Luka Pacioli.</li>
@@ -148,7 +144,6 @@
             <li><strong>Grāmatvedība un nākotnes prognozes:</strong> Grāmatveži izmanto datus, lai veiktu prognozes un palīdzētu uzņēmumiem plānot nākotnes izdevumus un ienākumus.</li>
         </ul>
     </div>
-
     <!-- Laikapstākļi -->
     <div class="section" id="laikapstakli">
         <h3>Laikapstākļi Rīgā</h3>
@@ -158,45 +153,21 @@
     <!-- Dienas Joks -->
     <div id="joks">
         <div class="footer-joke-text">Dienas Joks</div>
-        <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9hbp2q.jpg" alt="Dienas joks">
     </div>
 
     <footer>
-        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāts kā joks un nav jāuztver nopietni!</p>
+        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas.</p>
     </footer>
 
     <script>
-        // Reāllaika pulkstenis
+        // Atjaunina laiku
         function updateTime() {
             const now = new Date();
-            document.getElementById('current-time').textContent = now.toLocaleTimeString('lv-LV');
+            document.getElementById('current-time').textContent = now.toLocaleDateString('lv-LV') + ' ' + now.toLocaleTimeString('lv-LV');
         }
         setInterval(updateTime, 1000);
         updateTime();
-
-        // Laikapstākļu prognoze
-        const apiKey = "1b5e2264709b5eacd217f25ebf6dc09a";
-        const city = "Riga";
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=lv`;
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                if (data.cod === 200) {
-                    const weatherDiv = document.getElementById("weather");
-                    weatherDiv.innerHTML = `
-                        <p><strong>Pilsēta:</strong> ${data.name}</p>
-                        <p><strong>Temperatūra:</strong> ${data.main.temp} °C</p>
-                        <p><strong>Laikapstākļi:</strong> ${data.weather[0].description}</p>
-                        <p><strong>Vēja ātrums:</strong> ${data.wind.speed} m/s</p>
-                    `;
-                } else {
-                    document.getElementById("weather").innerText = "Neizdevās ielādēt laikapstākļus.";
-                }
-            })
-            .catch(error => {
-                document.getElementById("weather").innerText = "Kļūda, mēģiniet vēlreiz.";
-            });
     </script>
 </body>
 </html>
