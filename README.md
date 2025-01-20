@@ -110,7 +110,6 @@
             border-collapse: collapse;
             margin-top: 20px;
         }
-
         table, th, td {
             border: 1px solid #ddd;
         }
