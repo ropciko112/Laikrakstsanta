@@ -1,3 +1,7 @@
+Protams! Šeit ir atjauninātais HTML kods ar pievienoto JavaScript kodu, kas parāda laika prognozi Rīgai:
+
+```html
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -199,47 +203,4 @@
                     <td>+3</td>
                     <td>3</td>
                     <td>R</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td>+3</td>
-                    <td>3</td>
-                    <td>A</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>17:00</td>
-                    <td>+3</td>
-                    <td>5</td>
-                    <td>DA</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>20:00</td>
-                    <td>+2</td>
-                    <td>8</td>
-                    <td>DA</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>23:00</td>
-                    <td>+2</td>
-                    <td>8</td>
-                    <td>DA</td>
-                    <td>0</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Jaunais attēls -->
-    <div>
-        <img class="footer-image" src="https://i.redd.it/nza8lhmtjzde1.jpeg" alt="u/Low-Sir-7440 - vins">
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. Lapa paredzēta kā joks un nav jāuztver nopietni :)</p>
-    </footer>
-</body>
-</html>
+                    <td>
