@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -146,5 +145,10 @@
                 document.getElementById("weather").innerText = "Kļūda, mēģiniet vēlreiz.";
             });
     </script>
+     <!-- Dienas Joks attēls lapas apakšā -->
+    <div>
+        <div class="footer-joke-text">Dienas Joks</div>
+        <img class="footer-image" src="https://i.redd.it/97hzmg9f0kde1.jpeg" alt="Dienas Joks">
+    </div>
 </body>
 </html>
