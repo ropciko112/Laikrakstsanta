@@ -173,7 +173,6 @@
         <h3>Interesanti fakti par Bioluminiscenci</h3>
         <ul class="facts-list">
           <p><strong>Bioluminiscence ir dabīgā gaismas ražo&scaron;ana</strong>: Bioluminiscence ir gaismas izdalī&scaron;anās no dzīvām būtnēm, un to var novērot gan dzīvniekos, gan mikroorganismos, gan dažās augu sugās.</p>
-</li>
 <li>
 <p><strong>Bioluminiscence rodas ķīmisku reakciju rezultātā</strong>: &Scaron;o gaismu rada ķīmiska reakcija starp enzīmu luciferāzi un substrātu luciferīnu, kuras rezultātā tiek izdalīta gaisma. Reakcija notiek bez siltuma izdalī&scaron;anās (tā sauktais aukstais gaismas veids).</p>
 </li>
