@@ -147,7 +147,7 @@
 <body>
 
     <header>
-        <div class="header-left">Nr. 7</div>
+        <div class="header-left">Nr. 8</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span><br>
