@@ -165,43 +165,41 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin Austris.</p>
+        <p>Šodien vārda dienas svin Rebeka.</p>
     </div>
 
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par kosmosu</h3>
+        <h3>Interesanti fakti par Bioluminiscenci</h3>
         <ul class="facts-list">
-           <p><strong>Vārda izcelsme</strong>: Vārds "Anta" ir populārs vairākās valstīs, un tam var būt dažādas izcelsmes atkarībā no valsts vai kultūras. Latvie&scaron;u valodā "Anta" ir sievietes vārds, kas bieži tiek saistīts ar latviskiem un igauņu vārdiem, kas cēlu&scaron;ies no senām tradīcijām.</p>
-<li>
-<p><strong>Nezvaigžņu dzim&scaron;ana</strong> &ndash; Jauns zvaigznes veidojas galaktiku miglājos, kur gāzes un putekļi saspiežas un uzsilst, līdz sāk notikt kodolreakcijas, radot spožas zvaigznes.</p>
+          <p><strong>Bioluminiscence ir dabīgā gaismas ražo&scaron;ana</strong>: Bioluminiscence ir gaismas izdalī&scaron;anās no dzīvām būtnēm, un to var novērot gan dzīvniekos, gan mikroorganismos, gan dažās augu sugās.</p>
 </li>
 <li>
-<p><strong>Kosmiskā vakuuma ietekme</strong> &ndash; Kosmosā ir ļoti maz vielas un atmosfēras, kas nozīmē, ka vakuuma stāvoklis ir ļoti tuvs, tāpēc skaņa nevar ceļot, jo nav pietiekami daudz molekulu, kas varētu pārnest vibrācijas.</p>
+<p><strong>Bioluminiscence rodas ķīmisku reakciju rezultātā</strong>: &Scaron;o gaismu rada ķīmiska reakcija starp enzīmu luciferāzi un substrātu luciferīnu, kuras rezultātā tiek izdalīta gaisma. Reakcija notiek bez siltuma izdalī&scaron;anās (tā sauktais aukstais gaismas veids).</p>
 </li>
 <li>
-<p><strong>Melnie caurumi</strong> &ndash; Melnie caurumi ir kosmiskie objekti ar tādu masu un blīvumu, ka pat gaisma nevar izbēgt no to gravitācijas spēka. Tās ir radītas, sabrūkot masīvām zvaigznēm.</p>
+<p><strong>Jūras dzīvnieki ir galvenie bioluminiscences īpa&scaron;nieki</strong>: Daudzas jūras dzīvnieku sugas, piemēram, dziļjūras zivis, medūzas un garneles, izmanto bioluminiscenci gan medībās, gan aizsardzībā.</p>
 </li>
 <li>
-<p><strong>Saules sistēma ir tikai maza daļa</strong> &ndash; Saules sistēma ir tikai neliela daļa no mūsu galaktikas "Piena Ceļa", kas ietver vairāk nekā 100 miljardia zvaigznes.</p>
+<p><strong>Bioluminiscences loma ekosistēmā</strong>: Dzīvnieki izmanto bioluminiscenci, lai piesaistītu partnerus, vilinātu upurus vai aizsargātu sevi. Piemēram, dažas zivis izstaro gaismu, lai &ldquo;izkrāptu&rdquo; citas sugas.</p>
 </li>
 <li>
-<p><strong>Saules iznīcinā&scaron;ana</strong> &ndash; Pēc aptuveni 5 miljardiem gadu Saules kodolā izbeigsies ūdeņraža krājumi, un tā kļūs par sarkano milzi, kas iznīcinās Zemi.</p>
+<p><strong>Bioluminiscence uzkrājas līdz ar dziļumu</strong>: Jo dziļākā jūrā atrodas dzīvnieks, jo biežāk viņi izmanto bioluminiscenci. Dziļjūras dzīvniekiem bieži vien ir pat spilgtas gaismas izstarotājas, lai izdzīvotu tum&scaron;ajās dziļās ūdeņos.</p>
 </li>
 <li>
-<p><strong>Kosmiskais atbalss</strong> &ndash; Pasaules radī&scaron;anas liecinieki &ndash; "kosmiskais mikrovīzijas fons" &ndash; ir radies no liela sprādziena, kas notika pirms aptuveni 13,8 miljardiem gadiem.</p>
+<p><strong>Bioluminiscences izmanto&scaron;ana cilvēku interesēs</strong>: Zinātnieki pēta bioluminiscenci, lai attīstītu jaunas tehnoloģijas, piemēram, gaismas avotus, kas darbojas ar bioloģiskiem mehānismiem vai bioluminiscējo&scaron;as &scaron;ūnas, kas var palīdzēt izsekot audzēju attīstībai.</p>
 </li>
 <li>
-<p><strong>Planētu dzīvotspēja</strong> &ndash; Lai uz planētas pastāvētu dzīvība, ir nepiecie&scaron;ams noteikts temperatūras diapazons, ūdens un atmosfēra, kas ir veicinājusi "Zemes" statusu kā vienīgo planētu, uz kuras zināms dzīvība pastāv.</p>
+<p><strong>Zinātniski svarīgas bioluminiscējo&scaron;as vielas</strong>: Bioluminiscējo&scaron;as vielas tiek izmantotas arī bioloģiskajās pētniecībās, piemēram, bioluminiscējo&scaron;ās olbaltumvielas tiek izmantotas, lai pētītu &scaron;ūnu funkcijas un molekulāro uzbūvi.</p>
 </li>
 <li>
-<p><strong>Tum&scaron;ā matērija un tum&scaron;ā enerģija</strong> &ndash; Lielākā daļa no visuma sastāv no tum&scaron;ās matērijas un tum&scaron;ās enerģijas, par kurām mēs joprojām īsti neko nezinām, bet tās ir galvenais spēks, kas nosaka galaktiku kustību un izple&scaron;anos.</p>
+<p><strong>Bioluminiscence uz Zemes ir ļoti sena parādība</strong>: Pirmie pierādījumi par bioluminiscenci ir vairāk nekā 500 miljonus gadus veci, kas liecina, ka tā pastāv jau kop&scaron; dzīvības sākuma uz Zemes.</p>
 </li>
 <li>
-<p><strong>Kosmiskās sēklas</strong> &ndash; Zemes dzīvība var būt "izdzīvojusi" no kosmiskajiem sēklu mikroskopiskajiem organismiem, kas iespējams nonāku&scaron;i uz mūsu planētas, pārsprāgstot uz asteroīdiem.</p>
+<p><strong>Bioluminiscējo&scaron;ie organismi dažreiz izmanto arī ķimikālijas</strong>: Daži dzīvnieki bioluminiscenci izmanto kā aizsardzības mehānismu, piemēram, tādas zivis kā kalmāri izstaro gaismu, lai sajauktu plēsoņu orientē&scaron;anos.</p>
 </li>
 <li>
-<p><strong>Bezgalīgais kosmoss</strong> &ndash; Kosmoss izskatās bezgalīgs, un pat mūsdienās zinātnieki vēl tikai sāk apzināt visuma apmērus. Tas varētu būt daudz lielāks, nekā mēs varam iedomāties.</p></li>
+<p><strong>Zinātnieki pēta iespējas bioluminiscences izmanto&scaron;anai ārpus Zemes</strong>: Bioluminiscences mehānismi var būt noderīgi ārpus Zemes pētniecībā, jo to izmanto&scaron;ana palīdzētu dzīvotspējīgiem organismiem izdzīvot planētu vidē ar ļoti zemu gaismas līmeni.</p></li>
             <!-- Pievienojiet citus faktus -->
         </ul>
     </div>
@@ -215,7 +213,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/Angry%20Girl%20Meme.gif" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hlyy8.jpg" />
     </div>
 
     <footer>
