@@ -147,7 +147,7 @@
 <body>
 
     <header>
-        <div class="header-left">Nr. 8</div>
+        <div class="header-left">Nr. 9</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span><br>
@@ -165,40 +165,41 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin Rebeka.</p>
+        <p>Šodien vārda dienas svin: Krišs, Ksenija, Eglons, Egle.</p>
     </div>
 
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par Bioluminiscenci</h3>
+        <h3>Interesanti fakti par: Pasaules augstākiem kalniem.</h3>
         <ul class="facts-list">
-          <p><strong>Bioluminiscence ir dabīgā gaismas ražo&scaron;ana</strong>: Bioluminiscence ir gaismas izdalī&scaron;anās no dzīvām būtnēm, un to var novērot gan dzīvniekos, gan mikroorganismos, gan dažās augu sugās.</p>
-<li>
-<p><strong>Bioluminiscence rodas ķīmisku reakciju rezultātā</strong>: &Scaron;o gaismu rada ķīmiska reakcija starp enzīmu luciferāzi un substrātu luciferīnu, kuras rezultātā tiek izdalīta gaisma. Reakcija notiek bez siltuma izdalī&scaron;anās (tā sauktais aukstais gaismas veids).</p>
+          <p><strong>Everests nav vienīgais augstākais kalns</strong> &ndash; lai gan Mount Everest ir augstākais kalns uz Zemes, ja ņem vērā tikai kalnus, kas mēra no jūras līmeņa, tad <strong>Mauna Kea</strong> Havaju salās, kas sākas no okeāna dibena, faktiski ir augstākais kalns pasaulē, ar kopējo augstumu 10 210 metru.</p>
 </li>
 <li>
-<p><strong>Jūras dzīvnieki ir galvenie bioluminiscences īpa&scaron;nieki</strong>: Daudzas jūras dzīvnieku sugas, piemēram, dziļjūras zivis, medūzas un garneles, izmanto bioluminiscenci gan medībās, gan aizsardzībā.</p>
+<p><strong>Everesta augstums nemainās ievērojami</strong> &ndash; Mount Everest augstums tiek regulāri pārbaudīts, un pēdējais noteiktais augstums ir 8 848,86 metri, kas tika apstiprināts 2020. gadā pēc kopīgiem ķīnie&scaron;u un nepālie&scaron;u pētījumiem.</p>
 </li>
 <li>
-<p><strong>Bioluminiscences loma ekosistēmā</strong>: Dzīvnieki izmanto bioluminiscenci, lai piesaistītu partnerus, vilinātu upurus vai aizsargātu sevi. Piemēram, dažas zivis izstaro gaismu, lai &ldquo;izkrāptu&rdquo; citas sugas.</p>
+<p><strong>Zemākās un augstākās vietas uz Zemes</strong> &ndash; ja runājam par zemākajiem un augstākajiem punktiem uz Zemes, tad <strong>Everests</strong> ir augstākais, savukārt <strong>Nāves jūra</strong> ir viena no zemākajām vietām, tās virsma ir 430 metrus zem jūras līmeņa.</p>
 </li>
 <li>
-<p><strong>Bioluminiscence uzkrājas līdz ar dziļumu</strong>: Jo dziļākā jūrā atrodas dzīvnieks, jo biežāk viņi izmanto bioluminiscenci. Dziļjūras dzīvniekiem bieži vien ir pat spilgtas gaismas izstarotājas, lai izdzīvotu tum&scaron;ajās dziļās ūdeņos.</p>
+<p><strong>Altitūdā cilvēka ķermenis reaģē</strong> &ndash; augstākos kalnos, piemēram, Everestā, ir ļoti zems skābekļa līmenis, kas var izraisīt <strong>augstuma slimību</strong>. Lai to novērstu, kalnos kāpējiem jāveic aklimatizācijas procesi, un dažreiz viņiem jāizmanto skābekļa baloni.</p>
 </li>
 <li>
-<p><strong>Bioluminiscences izmanto&scaron;ana cilvēku interesēs</strong>: Zinātnieki pēta bioluminiscenci, lai attīstītu jaunas tehnoloģijas, piemēram, gaismas avotus, kas darbojas ar bioloģiskiem mehānismiem vai bioluminiscējo&scaron;as &scaron;ūnas, kas var palīdzēt izsekot audzēju attīstībai.</p>
+<p><strong>Kalnu kāp&scaron;anas vēsture</strong> &ndash; pirmā dokumentētā Everestā sasniegtā virsotne bija 1953. gadā, kad sir Edmunds Hillary no Jaunzēlandes un Tenzings Norgays no Nepālas uzkāpa kalnā. Tomēr līdz tam kalns jau bija bijis zināms, un vairāki pētījumi un mēģinājumi tika veikti vēl pirms tam.</p>
 </li>
 <li>
-<p><strong>Zinātniski svarīgas bioluminiscējo&scaron;as vielas</strong>: Bioluminiscējo&scaron;as vielas tiek izmantotas arī bioloģiskajās pētniecībās, piemēram, bioluminiscējo&scaron;ās olbaltumvielas tiek izmantotas, lai pētītu &scaron;ūnu funkcijas un molekulāro uzbūvi.</p>
+<p><strong>Kāpinājumi un izaicinājumi</strong> &ndash; Mount Everesta kāp&scaron;ana ir liels izaicinājums, ne tikai fizioloģiski, bet arī morāli. Katru gadu uz Everestu dodas tūksto&scaron;iem cilvēku, taču daudzi no viņiem cie&scaron; no smagām slimībām vai mirst augstuma dēļ, kas padara &scaron;o kāp&scaron;anu par ļoti bīstamu.</p>
 </li>
 <li>
-<p><strong>Bioluminiscence uz Zemes ir ļoti sena parādība</strong>: Pirmie pierādījumi par bioluminiscenci ir vairāk nekā 500 miljonus gadus veci, kas liecina, ka tā pastāv jau kop&scaron; dzīvības sākuma uz Zemes.</p>
+<p><strong>Kāpēju "josla"</strong> &ndash; virs 8 000 metriem atrodas tā dēvētais "nāves zonu", kur cilvēkiem ir ļoti grūti izdzīvot bez papildus skābekļa. &Scaron;ajā augstumā skābekļa daudzums ir tikai aptuveni 1/3 no zemākas altitūdas līmeņa.</p>
 </li>
 <li>
-<p><strong>Bioluminiscējo&scaron;ie organismi dažreiz izmanto arī ķimikālijas</strong>: Daži dzīvnieki bioluminiscenci izmanto kā aizsardzības mehānismu, piemēram, tādas zivis kā kalmāri izstaro gaismu, lai sajauktu plēsoņu orientē&scaron;anos.</p>
+<p><strong>Mērījumu precizitāte</strong> &ndash; kalnu augstums tiek mērīts, izmantojot dažādas tehnoloģijas, piemēram, satelītus, GPS un trigonometriju, un tās kļūdas var būt mazākas par dažiem centimetriem.</p>
 </li>
 <li>
-<p><strong>Zinātnieki pēta iespējas bioluminiscences izmanto&scaron;anai ārpus Zemes</strong>: Bioluminiscences mehānismi var būt noderīgi ārpus Zemes pētniecībā, jo to izmanto&scaron;ana palīdzētu dzīvotspējīgiem organismiem izdzīvot planētu vidē ar ļoti zemu gaismas līmeni.</p></li>
+<p><strong>Citi ievērojami kalni</strong> &ndash; daži no citiem ievērojamiem kalniem pasaulē ir K2 (8 611 metri), Kangchenjunga (8 586 metri), Lhotse (8 516 metri) un Makalu (8 485 metri).</p>
+</li>
+<li>
+<p><strong>Kalnu ekosistēmas</strong> &ndash; augstajos kalnos dzīvotāji ir pieradu&scaron;i pie īpa&scaron;iem apstākļiem, piemēram, zemas temperatūras, vāja skābekļa un stipriem vējiem. Kalnu faunā un florā ir daudzas unikālas sugas, piemēram, sniega leopardi un īpa&scaron;i pielāgotas augu sugas.</p></li>
             <!-- Pievienojiet citus faktus -->
         </ul>
     </div>
@@ -212,7 +213,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hlyy8.jpg" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hpxoo.jpg" />
     </div>
 
     <footer>
