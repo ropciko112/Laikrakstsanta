@@ -173,7 +173,6 @@
         <h3>Interesanti fakti par: Pasaules augstākiem kalniem.</h3>
         <ul class="facts-list">
           <p><strong>Everests nav vienīgais augstākais kalns</strong> &ndash; lai gan Mount Everest ir augstākais kalns uz Zemes, ja ņem vērā tikai kalnus, kas mēra no jūras līmeņa, tad <strong>Mauna Kea</strong> Havaju salās, kas sākas no okeāna dibena, faktiski ir augstākais kalns pasaulē, ar kopējo augstumu 10 210 metru.</p>
-</li>
 <li>
 <p><strong>Everesta augstums nemainās ievērojami</strong> &ndash; Mount Everest augstums tiek regulāri pārbaudīts, un pēdējais noteiktais augstums ir 8 848,86 metri, kas tika apstiprināts 2020. gadā pēc kopīgiem ķīnie&scaron;u un nepālie&scaron;u pētījumiem.</p>
 </li>
