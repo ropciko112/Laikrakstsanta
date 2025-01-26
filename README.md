@@ -147,7 +147,7 @@
 <body>
 
     <header>
-        <div class="header-left">Nr. 9</div>
+        <div class="header-left">Nr. 10</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span><br>
@@ -165,37 +165,40 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin: Krišs, Ksenija, Eglons, Egle.</p>
+        <p>Šodien vārda dienas svin: Ilze, Ildze, Izolde.</p>
     </div>
 
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par: Pasaules augstākiem kalniem.</h3>
+        <h3>Interesanti fakti par: Septiņiem pasaules brīnumiem.</h3>
         <ul class="facts-list">
-          <p><strong>Everests nav vienīgais augstākais kalns</strong> &ndash; lai gan Mount Everest ir augstākais kalns uz Zemes, ja ņem vērā tikai kalnus, kas mēra no jūras līmeņa, tad <strong>Mauna Kea</strong> Havaju salās, kas sākas no okeāna dibena, faktiski ir augstākais kalns pasaulē, ar kopējo augstumu 10 210 metru.</p>
+          <p><strong>Pirmie brīnumi</strong>: Septiņi pasaules brīnumi sākotnēji tika uzskaitīti sengrieķu ceļotāju un vēsturnieku sarakstos, kas veidoti ap 200. gadu p.m.ē.</p>
 <li>
-<p><strong>Everesta augstums nemainās ievērojami</strong> &ndash; Mount Everest augstums tiek regulāri pārbaudīts, un pēdējais noteiktais augstums ir 8 848,86 metri, kas tika apstiprināts 2020. gadā pēc kopīgiem ķīnie&scaron;u un nepālie&scaron;u pētījumiem.</p>
+<p><strong>Lielā piramīda</strong>: Lielā piramīda Gīzā (Ēģiptē) ir vienīgais no oriģinālajiem brīnumiem, kas saglabājies līdz mūsdienām.</p>
 </li>
 <li>
-<p><strong>Zemākās un augstākās vietas uz Zemes</strong> &ndash; ja runājam par zemākajiem un augstākajiem punktiem uz Zemes, tad <strong>Everests</strong> ir augstākais, savukārt <strong>Nāves jūra</strong> ir viena no zemākajām vietām, tās virsma ir 430 metrus zem jūras līmeņa.</p>
+<p><strong>Efesa Artemīdes templis</strong>: &Scaron;is templis, kas bija viens no pasaules brīnumiem, tika pilnībā iznīcināts 401. gadā mūsdienu Turcijā, kad to nodedzināja.</p>
 </li>
 <li>
-<p><strong>Altitūdā cilvēka ķermenis reaģē</strong> &ndash; augstākos kalnos, piemēram, Everestā, ir ļoti zems skābekļa līmenis, kas var izraisīt <strong>augstuma slimību</strong>. Lai to novērstu, kalnos kāpējiem jāveic aklimatizācijas procesi, un dažreiz viņiem jāizmanto skābekļa baloni.</p>
+<p><strong>Maja kultūra</strong>: Pasaules brīnumos ir iekļauti arī uzlabotie Maja civilizācijas arhitektūras veidojumi, piemēram, Chichen Itza piramīda, kas atrodas Meksikā.</p>
 </li>
 <li>
-<p><strong>Kalnu kāp&scaron;anas vēsture</strong> &ndash; pirmā dokumentētā Everestā sasniegtā virsotne bija 1953. gadā, kad sir Edmunds Hillary no Jaunzēlandes un Tenzings Norgays no Nepālas uzkāpa kalnā. Tomēr līdz tam kalns jau bija bijis zināms, un vairāki pētījumi un mēģinājumi tika veikti vēl pirms tam.</p>
+<p><strong>Hālīkarnassas mauzolejs</strong>: &Scaron;is monumentālais piemineklis, kas tika uzcelts Hālīkarnasā (mūsdienu Bodrumā, Turcija) ķēni&scaron;a Mausolosa piemiņai, tika iznīcināts zemestrīces laikā 1300. gadā.</p>
 </li>
 <li>
-<p><strong>Kāpinājumi un izaicinājumi</strong> &ndash; Mount Everesta kāp&scaron;ana ir liels izaicinājums, ne tikai fizioloģiski, bet arī morāli. Katru gadu uz Everestu dodas tūksto&scaron;iem cilvēku, taču daudzi no viņiem cie&scaron; no smagām slimībām vai mirst augstuma dēļ, kas padara &scaron;o kāp&scaron;anu par ļoti bīstamu.</p>
+<p><strong>Koloss no Rodas</strong>: &Scaron;ī milzīgā statuja stāvēja pie Rodes ostas un tika sabrukusi pēc zemestrīces 226. gadā p.m.ē.</p>
 </li>
 <li>
-<p><strong>Kāpēju "josla"</strong> &ndash; virs 8 000 metriem atrodas tā dēvētais "nāves zonu", kur cilvēkiem ir ļoti grūti izdzīvot bez papildus skābekļa. &Scaron;ajā augstumā skābekļa daudzums ir tikai aptuveni 1/3 no zemākas altitūdas līmeņa.</p>
+<p><strong>Jūdas jūras pakājē</strong>: Pasaules brīnumi iekļāva arī &Scaron;aķara ezeru un tempļus, kas bija izcils piemērs romie&scaron;u impērijas arhitektūrai.</p>
 </li>
 <li>
-<p><strong>Mērījumu precizitāte</strong> &ndash; kalnu augstums tiek mērīts, izmantojot dažādas tehnoloģijas, piemēram, satelītus, GPS un trigonometriju, un tās kļūdas var būt mazākas par dažiem centimetriem.</p>
+<p><strong>Mūsdienu brīnumi</strong>: 2007. gadā tika apstiprināti jauni septiņi pasaules brīnumi, tostarp Tadžmahal, Lielais Mura siena un Machu Picchu.</p>
 </li>
 <li>
-<p><strong>Citi ievērojami kalni</strong> &ndash; daži no citiem ievērojamiem kalniem pasaulē ir K2 (8 611 metri), Kangchenjunga (8 586 metri), Lhotse (8 516 metri) un Makalu (8 485 metri).</p>
+<p><strong>Maiju kalendārs un arhitektūra</strong>: Chichen Itza, viena no mūsdienu pasaules brīnumiem, ir pazīstama ar savu Maiju kalendāru, kas precīzi paredzēja solsticiju un citas astronomiskās parādības.</p>
+</li>
+<li>
+<p><strong>No brīnumiem līdz kultūrām</strong>: Septiņi pasaules brīnumi ir saistīti ar senajām civilizācijām, piemēram, ķēni&scaron;a Babylonas ziedu dārziem, kas bija lielisks inženierijas paraugs.</p>
 </li>
 <li>
 <p><strong>Kalnu ekosistēmas</strong> &ndash; augstajos kalnos dzīvotāji ir pieradu&scaron;i pie īpa&scaron;iem apstākļiem, piemēram, zemas temperatūras, vāja skābekļa un stipriem vējiem. Kalnu faunā un florā ir daudzas unikālas sugas, piemēram, sniega leopardi un īpa&scaron;i pielāgotas augu sugas.</p></li>
@@ -212,7 +215,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9hpxoo.jpg" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i0vkz.jpg" />
     </div>
 
     <footer>
