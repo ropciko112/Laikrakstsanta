@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-
         h1 {
             text-align: center;
             margin: 20px 0;
