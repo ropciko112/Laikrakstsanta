@@ -162,6 +162,7 @@ footer p {
         <a href="#laikapstakli">Laikapstākļi</a>
         <a href="#joks">Dienas Joks</a>
         <a href="docs/galerija.html">Galerija</a>
+        <a href="docs/game.html">Spēle</a>
     </nav>
 
     <!-- Vārda diena -->
