@@ -93,17 +93,16 @@
             border: 1px solid #ccc;
         }
 
-        footer {
+footer {
     background-color: #2c2c2c;
     color: white;
     text-align: center;
     padding: 15px;
     font-family: 'Georgia', serif;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: sticky;
     bottom: 0;
     width: 100%;
+    z-index: 1000; /* Nodrošina, ka tas paliek virs citiem elementiem */
 }
 
 footer p {
