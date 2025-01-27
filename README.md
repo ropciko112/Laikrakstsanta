@@ -26,8 +26,17 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .header-left, .header-right {
+        .header-left {
             font-size: 14px;
+        }
+
+        .header-right {
+            font-size: 16px;
+            text-align: right;
+            background-color: rgba(255, 255, 255, 0.1); /* Caurspīdīgs fons */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -35,6 +44,14 @@
             margin: 0;
             font-family: 'Georgia', serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #current-date, #current-time {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         /* Navigācija */
@@ -151,7 +168,7 @@
         <div class="header-left">Nr. 11</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
-            <span id="current-date">Ielādē datumu...</span><br>
+            <span id="current-date">Ielādē datumu...</span>
             <span id="current-time">Ielādē laiku...</span>
         </div>
     </header>
