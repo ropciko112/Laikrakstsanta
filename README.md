@@ -157,10 +157,6 @@ footer p {
     </header>
     
     <nav>
-        <a href="#vardadiena">Vārda diena</a>
-        <a href="#fakti">Interesanti fakti</a>
-        <a href="#laikapstakli">Laikapstākļi</a>
-        <a href="#joks">Dienas Joks</a>
         <a href="docs/galerija.html">Galerija</a>
         <a href="docs/game.html">Spēle</a>
     </nav>
