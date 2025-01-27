@@ -1,21 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cilvēciņa Lecamspēle</title>
     <style>
+        /* Globāli stili */
         body {
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #a1832b;
             margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
         }
 
+        header {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+        .header-left, .header-right {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Spēles stili */
         #game {
             position: relative;
             width: 900px;
             height: 300px;
-            margin: 0 auto;
+            margin: 20px auto;
             background-image: 
                 url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
                 url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
@@ -58,14 +102,53 @@
             background-size: cover;
         }
 
+        /* Foteris */
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: 'Georgia', serif;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .footer-text-center {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-left">Nr. 10</div>
+        <h1>Cilvēciņa Lecamspēle</h1>
+        <div class="header-right">
+            <span id="current-date">Ielādē datumu...</span><br>
+            <span id="current-time">Ielādē laiku...</span>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#game">Spēle</a>
+        <a href="docs/galerija.html">Galerija</a>
+        <a href="docs/game.html">Spēle</a>
+    </nav>
+
     <div id="game">
         <div id="score">Punkti: 0</div>
         <div id="dino"></div>
         <div id="cactus"></div>
     </div>
+
+    <footer>
+        <p class="footer-text-center">&copy; 2025 Cilvēciņa Lecamspēle. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
+    </footer>
 
     <script>
         const dino = document.getElementById("dino");
@@ -127,7 +210,7 @@
             // Ja cilvēciņš un kaktuss ir ļoti tuvu
             if (cactusLeftPosition > 20 && cactusLeftPosition < 80 && dinoBottom <= 50) {
                 // Izsist alert ar rezultātu
-                const restart = confirm(`Spēle beigusies! Tu ieguvi ${score} punktus. Roberts drīkst tevi nobiedēt 1* jo neieguvi 200 punktus. Vai vēlies spēlēt vēlreiz?`);
+                const restart = confirm(`Spēle beigusies! Tu ieguvi ${score} punktus. Vai vēlies spēlēt vēlreiz?`);
                 if (restart) {
                     resetGame(); // Atsākt spēli
                 }
@@ -144,7 +227,7 @@
             dino.style.bottom = "50px";
         }
 
-        // Palaist kaktusa pārvietošanu un sadursmes pārbaudi
+        // Palaist kaktusa pārvietošanas un sadursmes pārbaudi
         setInterval(() => {
             moveCactus();
             checkCollision();
