@@ -94,20 +94,22 @@
         }
 
         footer {
-            background-color: #2c2c2c;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-family: 'Georgia', serif;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Georgia', serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
 
-        footer p {
-            margin: 0;
-            font-size: 18px;
-        }
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
 
         .footer-joke-text {
             font-size: 18px;
