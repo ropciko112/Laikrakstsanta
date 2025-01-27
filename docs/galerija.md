@@ -11,13 +11,11 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-
         h1 {
             text-align: center;
             margin: 20px 0;
             color: #333;
         }
-
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -26,7 +24,6 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .gallery img {
             width: 100%;
             height: auto;
@@ -35,11 +32,9 @@
             transition: transform 0.3s ease-in-out;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         .gallery img:hover {
             transform: scale(1.05);
         }
-
         .overlay {
             position: fixed;
             top: 0;
@@ -54,19 +49,16 @@
             opacity: 0;
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
-
         .overlay img {
             max-width: 90%;
             max-height: 90%;
             border-radius: 8px;
             box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
         }
-
         .overlay.active {
             visibility: visible;
             opacity: 1;
         }
-
         .overlay:hover {
             cursor: pointer;
         }
@@ -87,11 +79,9 @@
             "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/a89449563a742c910a117f190694936ac9f25790/Image/attels3.jpg"
             // Pievieno vairāk attēlu URL pēc nepieciešamības
         ];
-
         const gallery = document.querySelector('.gallery');
         const overlay = document.getElementById('overlay');
         const overlayImage = overlay.querySelector('img');
-
         // Pievieno attēlus galerijai
         imageFiles.forEach((src) => {
             const img = document.createElement('img');
@@ -103,7 +93,6 @@
             });
             gallery.appendChild(img);
         });
-
         // Slēdz pilnekrāna skatu
         overlay.addEventListener('click', () => {
             overlay.classList.remove('active');
