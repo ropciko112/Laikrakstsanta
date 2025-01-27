@@ -160,6 +160,7 @@
         <a href="#fakti">Interesanti fakti</a>
         <a href="#laikapstakli">Laikapstākļi</a>
         <a href="#joks">Dienas Joks</a>
+        <a href="https://github.com/ropciko112/Laikrakstsanta/blob/f223aea8dcd1dfec00f74d80211fd626176bcc24/docs/galerija.md" target="_blank">Galerija</a>
     </nav>
 
     <!-- Vārda diena -->
