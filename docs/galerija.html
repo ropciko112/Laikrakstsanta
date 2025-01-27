@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antas dienas joku galerija</title>
     <style>
+        /* CSS Stili */
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #a1832b;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            text-align: center;
-            margin: 20px 0;
             color: #333;
         }
+
+        header {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+        .header-left, .header-right {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -24,6 +61,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .gallery img {
             width: 100%;
             height: auto;
@@ -32,9 +70,53 @@
             transition: transform 0.3s ease-in-out;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .gallery img:hover {
             transform: scale(1.05);
         }
+
+        /* Laikapstākļu sadaļa */
+        #weather {
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: 'Georgia', serif;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .footer-joke-text {
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+            margin-top: 10px;
+        }
+
+        /* Dienas joks sadaļai */
+        .jokes-section {
+            padding: 30px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
         .overlay {
             position: fixed;
             top: 0;
@@ -49,62 +131,97 @@
             opacity: 0;
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
+
         .overlay img {
             max-width: 90%;
             max-height: 90%;
             border-radius: 8px;
             box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
         }
+
         .overlay.active {
             visibility: visible;
             opacity: 1;
         }
+
         .overlay:hover {
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Attēlu Galerija</h1>
-    <div class="gallery">
+    <header>
+        <div class="header-left">Nr. 10</div>
+        <h1>Antas dienas joku galerija</h1>
+        <div class="header-right">
+            <span id="current-date">Ielādē datumu...</span><br>
+            <span id="current-time">Ielādē laiku...</span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#gallery">Galerija</a>
+    </nav>
+
+    <div class="gallery" id="gallery">
         <!-- Attēli tiks ģenerēti ar JavaScript -->
     </div>
+
     <div class="overlay" id="overlay">
         <img src="" alt="Pilnekrāna attēls">
     </div>
-<script>
-    const imageFiles = [
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gj29l.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gm8cf.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gmez5.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gq0gg.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gub22.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hbp2q.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hlyy8.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hpxoo.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9i0vkz.jpg?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Angry Girl Meme.gif?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Ekrānuzņēmums%202025-01-16%20091203.png?raw=true",
-        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Ekrānuzņēmums%202025-01-20%20084723.png?raw=true"
-    ];
-    const gallery = document.querySelector('.gallery');
-    const overlay = document.getElementById('overlay');
-    const overlayImage = overlay.querySelector('img');
-    // Pievieno attēlus galerijai
-    imageFiles.forEach((src) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = "Attēls";
-        img.addEventListener('click', () => {
-            overlayImage.src = src;
-            overlay.classList.add('active');
+
+    <footer>
+        <p>&copy; 2025 Antas dienas joku galerija. Visas tiesības aizsargātas.</p>
+    </footer>
+
+    <script>
+        const imageFiles = [
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gj29l.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gm8cf.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gmez5.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gq0gg.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gub22.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hbp2q.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hlyy8.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hpxoo.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9i0vkz.jpg?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Angry Girl Meme.gif?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Ekrānuzņēmums%202025-01-16%20091203.png?raw=true",
+            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Ekrānuzņēmums%202025-01-20%20084723.png?raw=true"
+        ];
+        const gallery = document.querySelector('.gallery');
+        const overlay = document.getElementById('overlay');
+        const overlayImage = overlay.querySelector('img');
+        imageFiles.forEach((src) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = "Attēls";
+            img.addEventListener('click', () => {
+                overlayImage.src = src;
+                overlay.classList.add('active');
+            });
+            gallery.appendChild(img);
         });
-        gallery.appendChild(img);
-    });
-    // Slēdz pilnekrāna skatu
-    overlay.addEventListener('click', () => {
-        overlay.classList.remove('active');
-    });
-</script>
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('active');
+        });
+
+        function updateTimeAndDate() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            const dateString = `${day}.${month}.${year}`;
+            document.getElementById('current-time').textContent = timeString;
+            document.getElementById('current-date').textContent = dateString;
+        }
+
+        setInterval(updateTimeAndDate, 1000);
+    </script>
 </body>
 </html>
