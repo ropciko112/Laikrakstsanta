@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laikraksts ANTA</title>
     <style>
-        /* CSS Stili */
+        /* Pamata stili */
         body {
             font-family: "Georgia", "Times New Roman", serif;
             background-color: #a1832b;
@@ -12,47 +13,69 @@
             padding: 0;
             color: #333;
         }
+
+        /* Galvene */
         header {
-            background-color: #2c2c2c;
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: white;
             padding: 20px 40px;
             text-align: center;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: 'Georgia', serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
         .header-left, .header-right {
             font-size: 14px;
         }
+
         h1 {
             font-size: 36px;
             margin: 0;
             font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
+
+        /* Navigācija */
         nav {
             background-color: #444;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
         nav a {
             color: white;
             margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
+
         nav a:hover {
             color: #ddd;
+            transform: translateY(-2px);
         }
+
+        /* Sekcijas */
         .section {
             padding: 30px;
             background-color: white;
             margin: 20px auto;
-            border-radius: 10px;
+            border-radius: 12px;
             width: 80%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
         h3 {
             font-size: 24px;
             font-weight: bold;
@@ -60,71 +83,66 @@
             color: #2c2c2c;
             margin-bottom: 15px;
         }
+
         p, li {
             font-size: 18px;
             line-height: 1.6;
         }
+
         ul.facts-list {
             list-style-type: none;
             padding-left: 0;
         }
+
         ul.facts-list li {
             margin-bottom: 20px;
         }
-        /* Laikapstākļu sadaļa - caurspīdīgums */
+
+        /* Laikapstākļu sadaļa */
         #weather {
-            background-color: rgba(240, 240, 240, 0.8); /* Caurspīdīgs gaišais fons */
+            background-color: rgba(240, 240, 240, 0.8);
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 18px;
             font-family: 'Georgia', serif;
             border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-footer {
-    background-color: #2c2c2c;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-family: 'Georgia', serif;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000; /* Nodrošina, ka tas paliek virs citiem elementiem */
-}
-
-footer p {
-    margin: 0;
-    font-size: 18px;
-}
-        .footer-joke-text {
-            font-size: 18px;
+        /* Kājene */
+        footer {
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+            color: white;
+            text-align: center;
+            padding: 20px;
             font-family: 'Georgia', serif;
-            margin-top: 10px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
         }
-        .footer-image {
-            display: block;
-            margin: 10px auto;
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ccc;
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
-        /* Dienas joks sadaļai */
+
+        /* Dienas joks sadaļa */
         .jokes-section {
             padding: 30px;
             background-color: #ffffff;
             margin: 20px auto;
-            border-radius: 10px;
+            border-radius: 12px;
             width: 80%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .jokes-section img {
             max-width: 100%;
             border-radius: 10px;
-        }
-        /* Centrēts teksts footer */
-        .footer-text-center {
-            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -150,34 +168,16 @@ footer p {
     <div id="fakti" class="section">
         <h3>Interesanti fakti par: Dzīvniekiem.</h3>
         <ul class="facts-list">
-            <p><strong>Ziloņi ir vienīgie dzīvnieki, kas nevar lēkt</strong><br />To masīvais ķermenis un īpa&scaron;ā kāju uzbūve to padara fiziski neiespējamu.</p>
-<li>
-<p><strong>Panda mazuļi dzimst sīki &ndash; vēl mazāki nekā pele</strong><br />Lielākie panda mazuļi sver tikai apmēram 100 gramus, bet pieaugu&scaron;ie var sverēt līdz 150 kg.</p>
-</li>
-<li>
-<p><strong>Zirņu gliemeži var gulēt līdz 3 gadiem</strong><br />Ja apstākļi nav labvēlīgi, tie spēj iemiglot uz ilgu laiku, līdz atkal ir piemērota vide.</p>
-</li>
-<li>
-<p><strong>Austrālijas krokodili spēj peldēt ar ātrumu līdz 29 km/h</strong><br />Tie ir vieni no ātrākajiem reptīļiem ūdenī.</p>
-</li>
-<li>
-<p><strong>Govs var uzkāpt aug&scaron;up pa kāpnēm, bet nevar nokāpt lejā</strong><br />To kāju uzbūve un lielais ķermenis to padara gandrīz neiespējamu.</p>
-</li>
-<li>
-<p><strong>Delfīni spēj atpazīt sevi spogulī</strong><br />Tie ir vieni no nedaudzajiem dzīvniekiem, kas demonstrē pa&scaron;apziņu.</p>
-</li>
-<li>
-<p><strong>Ķirzakas spēj atjaunot savu asti, ja tā ir zaudēta</strong><br />&Scaron;ī spēja saucas regenerācija, un tā ir viens no interesantākajiem dzīvnieku valsts fenomeniem.</p>
-</li>
-<li>
-<p><strong>Karūsu zivis ir vienīgie dzīvnieki, kas spēj pārvērsties no mātītes uz tēviņu</strong><br />Tas notiek, ja grupā nav pietiekami daudz tēviņu.</p>
-</li>
-<li>
-<p><strong>Sienāži spēj gulēt ar vienu atvērtu aci</strong><br />Tas ļauj viņiem būt modriem un uzmanīgiem pret plēsējiem, pat atpū&scaron;oties.</p>
-</li>
-<li>
-<p><strong>Kāpuru sirds atrodas to galvā</strong><br />&Scaron;ie vēžveidīgie ir unikāli ar to, ka to sirds, smadzenes un citi orgāni atrodas galvas daļā.</p>
-            </li>
+            <li><strong>Ziloņi ir vienīgie dzīvnieki, kas nevar lēkt</strong><br />To masīvais ķermenis un īpašā kāju uzbūve to padara fiziski neiespējamu.</li>
+            <li><strong>Panda mazuļi dzimst sīki – vēl mazāki nekā pele</strong><br />Lielākie panda mazuļi sver tikai apmēram 100 gramus, bet pieaugušie var sverēt līdz 150 kg.</li>
+            <li><strong>Zirņu gliemeži var gulēt līdz 3 gadiem</strong><br />Ja apstākļi nav labvēlīgi, tie spēj iemiglot uz ilgu laiku, līdz atkal ir piemērota vide.</li>
+            <li><strong>Austrālijas krokodili spēj peldēt ar ātrumu līdz 29 km/h</strong><br />Tie ir vieni no ātrākajiem reptīļiem ūdenī.</li>
+            <li><strong>Govs var uzkāpt augšup pa kāpnēm, bet nevar nokāpt lejā</strong><br />To kāju uzbūve un lielais ķermenis to padara gandrīz neiespējamu.</li>
+            <li><strong>Delfīni spēj atpazīt sevi spogulī</strong><br />Tie ir vieni no nedaudzajiem dzīvniekiem, kas demonstrē pašapziņu.</li>
+            <li><strong>Ķirzakas spēj atjaunot savu asti, ja tā ir zaudēta</strong><br />Šī spēja saucas regenerācija, un tā ir viens no interesantākajiem dzīvnieku valsts fenomeniem.</li>
+            <li><strong>Karūsu zivis ir vienīgie dzīvnieki, kas spēj pārvērsties no mātītes uz tēviņu</strong><br />Tas notiek, ja grupā nav pietiekami daudz tēviņu.</li>
+            <li><strong>Sienāži spēj gulēt ar vienu atvērtu aci</strong><br />Tas ļauj viņiem būt modriem un uzmanīgiem pret plēsējiem, pat atpūšoties.</li>
+            <li><strong>Kāpuru sirds atrodas to galvā</strong><br />Šie vēžveidīgie ir unikāli ar to, ka to sirds, smadzenes un citi orgāni atrodas galvas daļā.</li>
         </ul>
     </div>
     <!-- Laikapstākļi -->
@@ -208,6 +208,7 @@ footer p {
             document.getElementById('current-time').textContent = timeString;
             document.getElementById('current-date').textContent = dateString;
         }
+
         // Iegūt laikapstākļus no API
         function getWeather() {
             const weatherElement = document.getElementById('weather');
@@ -228,8 +229,10 @@ footer p {
                     console.error("Error fetching weather data:", error);
                 });
         }
+
         // Atjaunot laiku un datumu katru sekundi
         setInterval(updateTimeAndDate, 1000);
+
         // Iegūt laikapstākļus uzreiz
         getWeather();
     </script>
