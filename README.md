@@ -160,7 +160,7 @@
         <a href="#fakti">Interesanti fakti</a>
         <a href="#laikapstakli">Laikapstākļi</a>
         <a href="#joks">Dienas Joks</a>
-        <a href="https://github.com/ropciko112/Laikrakstsanta/blob/f223aea8dcd1dfec00f74d80211fd626176bcc24/docs/galerija.md" target="_blank">Galerija</a>
+        <a href="docs/galerija.html" target="_blank">Galerija</a>
     </nav>
 
     <!-- Vārda diena -->
@@ -173,37 +173,37 @@
     <div id="fakti" class="section">
         <h3>Interesanti fakti par: Septiņiem pasaules brīnumiem.</h3>
         <ul class="facts-list">
-          <p><strong>Pirmie brīnumi</strong>: Septiņi pasaules brīnumi sākotnēji tika uzskaitīti sengrieķu ceļotāju un vēsturnieku sarakstos, kas veidoti ap 200. gadu p.m.ē.</p>
-<li>
-<p><strong>Lielā piramīda</strong>: Lielā piramīda Gīzā (Ēģiptē) ir vienīgais no oriģinālajiem brīnumiem, kas saglabājies līdz mūsdienām.</p>
-</li>
-<li>
-<p><strong>Efesa Artemīdes templis</strong>: &Scaron;is templis, kas bija viens no pasaules brīnumiem, tika pilnībā iznīcināts 401. gadā mūsdienu Turcijā, kad to nodedzināja.</p>
-</li>
-<li>
-<p><strong>Maja kultūra</strong>: Pasaules brīnumos ir iekļauti arī uzlabotie Maja civilizācijas arhitektūras veidojumi, piemēram, Chichen Itza piramīda, kas atrodas Meksikā.</p>
-</li>
-<li>
-<p><strong>Hālīkarnassas mauzolejs</strong>: &Scaron;is monumentālais piemineklis, kas tika uzcelts Hālīkarnasā (mūsdienu Bodrumā, Turcija) ķēni&scaron;a Mausolosa piemiņai, tika iznīcināts zemestrīces laikā 1300. gadā.</p>
-</li>
-<li>
-<p><strong>Koloss no Rodas</strong>: &Scaron;ī milzīgā statuja stāvēja pie Rodes ostas un tika sabrukusi pēc zemestrīces 226. gadā p.m.ē.</p>
-</li>
-<li>
-<p><strong>Jūdas jūras pakājē</strong>: Pasaules brīnumi iekļāva arī &Scaron;aķara ezeru un tempļus, kas bija izcils piemērs romie&scaron;u impērijas arhitektūrai.</p>
-</li>
-<li>
-<p><strong>Mūsdienu brīnumi</strong>: 2007. gadā tika apstiprināti jauni septiņi pasaules brīnumi, tostarp Tadžmahal, Lielais Mura siena un Machu Picchu.</p>
-</li>
-<li>
-<p><strong>Maiju kalendārs un arhitektūra</strong>: Chichen Itza, viena no mūsdienu pasaules brīnumiem, ir pazīstama ar savu Maiju kalendāru, kas precīzi paredzēja solsticiju un citas astronomiskās parādības.</p>
-</li>
-<li>
-<p><strong>No brīnumiem līdz kultūrām</strong>: Septiņi pasaules brīnumi ir saistīti ar senajām civilizācijām, piemēram, ķēni&scaron;a Babylonas ziedu dārziem, kas bija lielisks inženierijas paraugs.</p>
-</li>
-<li>
-<p><strong>Kalnu ekosistēmas</strong> &ndash; augstajos kalnos dzīvotāji ir pieradu&scaron;i pie īpa&scaron;iem apstākļiem, piemēram, zemas temperatūras, vāja skābekļa un stipriem vējiem. Kalnu faunā un florā ir daudzas unikālas sugas, piemēram, sniega leopardi un īpa&scaron;i pielāgotas augu sugas.</p></li>
-            <!-- Pievienojiet citus faktus -->
+            <p><strong>Pirmie brīnumi</strong>: Septiņi pasaules brīnumi sākotnēji tika uzskaitīti sengrieķu ceļotāju un vēsturnieku sarakstos, kas veidoti ap 200. gadu p.m.ē.</p>
+            <li>
+                <p><strong>Lielā piramīda</strong>: Lielā piramīda Gīzā (Ēģiptē) ir vienīgais no oriģinālajiem brīnumiem, kas saglabājies līdz mūsdienām.</p>
+            </li>
+            <li>
+                <p><strong>Efesa Artemīdes templis</strong>: Šis templis, kas bija viens no pasaules brīnumiem, tika pilnībā iznīcināts 401. gadā mūsdienu Turcijā, kad to nodedzināja.</p>
+            </li>
+            <li>
+                <p><strong>Maja kultūra</strong>: Pasaules brīnumos ir iekļauti arī uzlabotie Maja civilizācijas arhitektūras veidojumi, piemēram, Chichen Itza piramīda, kas atrodas Meksikā.</p>
+            </li>
+            <li>
+                <p><strong>Hālīkarnassas mauzolejs</strong>: Šis monumentālais piemineklis, kas tika uzcelts Hālīkarnasā (mūsdienu Bodrumā, Turcija) ķēniša Mausolosa piemiņai, tika iznīcināts zemestrīces laikā 1300. gadā.</p>
+            </li>
+            <li>
+                <p><strong>Koloss no Rodas</strong>: Šī milzīgā statuja stāvēja pie Rodes ostas un tika sabrukusi pēc zemestrīces 226. gadā p.m.ē.</p>
+            </li>
+            <li>
+                <p><strong>Jūdas jūras pakājē</strong>: Pasaules brīnumi iekļāva arī Šaķara ezeru un tempļus, kas bija izcils piemērs romiešu impērijas arhitektūrai.</p>
+            </li>
+            <li>
+                <p><strong>Mūsdienu brīnumi</strong>: 2007. gadā tika apstiprināti jauni septiņi pasaules brīnumi, tostarp Tadžmahal, Lielais Mura siena un Machu Picchu.</p>
+            </li>
+            <li>
+                <p><strong>Maiju kalendārs un arhitektūra</strong>: Chichen Itza, viena no mūsdienu pasaules brīnumiem, ir pazīstama ar savu Maiju kalendāru, kas precīzi paredzēja solsticiju un citas astronomiskās parādības.</p>
+            </li>
+            <li>
+                <p><strong>No brīnumiem līdz kultūrām</strong>: Septiņi pasaules brīnumi ir saistīti ar senajām civilizācijām, piemēram, ķēniša Babylonas ziedu dārziem, kas bija lielisks inženierijas paraugs.</p>
+            </li>
+            <li>
+                <p><strong>Kalnu ekosistēmas</strong> – augstajos kalnos dzīvotāji ir pieraduši pie īpašiem apstākļiem, piemēram, zemas temperatūras, vāja skābekļa un stipriem vējiem. Kalnu faunā un florā ir daudzas unikālas sugas, piemēram, sniega leopardi un īpaši pielāgotas augu sugas.</p>
+            </li>
         </ul>
     </div>
 
