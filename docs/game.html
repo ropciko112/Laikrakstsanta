@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilvēciņa Lecamspēle</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #game {
+            position: relative;
+            width: 900px;
+            height: 300px;
+            margin: 0 auto;
+            background-image: 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif');
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            background-position: left, center, right;
+            border: 2px solid #333;
+            overflow: hidden;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        #dino {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/image-removebg-preview%20(3).png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #cactus {
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/image-removebg-preview%20(4).png');
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div id="score">Punkti: 0</div>
+        <div id="dino"></div>
+        <div id="cactus"></div>
+    </div>
+
+    <script>
+        const dino = document.getElementById("dino");
+        const cactus = document.getElementById("cactus");
+        const scoreDisplay = document.getElementById("score");
+        let jumping = false;
+        let score = 0;
+        let cactusLeft = 900;
+        let cactusPassed = false; // Lai sekotu līdzi, vai kaktuss ir pārlēkts
+
+        // Cilvēciņš lec funkcija
+        function jump() {
+            if (jumping) return;
+            jumping = true;
+            let upInterval = setInterval(() => {
+                let dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
+                if (dinoBottom >= 150) {
+                    clearInterval(upInterval);
+                    let downInterval = setInterval(() => {
+                        dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
+                        if (dinoBottom <= 50) {
+                            clearInterval(downInterval);
+                            jumping = false;
+                        }
+                        dino.style.bottom = (dinoBottom - 5) + "px";
+                    }, 20);
+                }
+                dino.style.bottom = (dinoBottom + 5) + "px";
+            }, 20);
+        }
+
+        // Klausies "Space" taustiņu
+        document.addEventListener("keydown", event => {
+            if (event.code === "Space") jump();
+        });
+
+        // Kaktusa pārvietošanas funkcija
+        function moveCactus() {
+            cactusLeft -= 5; // Kaktuss pārvietojas pa kreisi
+            if (cactusLeft < -50) {
+                cactusLeft = 900; // Kaktuss atgriežas no labās malas
+                cactusPassed = false; // Resetē, lai nākamais kaktuss būtu jāpaņem
+            }
+            cactus.style.left = cactusLeft + "px";
+
+            // Pārbaude, vai cilvēciņš ir pārlec kaktusu
+            if (cactusLeft < 50 && cactusLeft > 0 && !cactusPassed) {
+                score++; // Pievieno punktu
+                scoreDisplay.textContent = `Punkti: ${score}`;
+                cactusPassed = true; // Atzīmē, ka kaktuss ir pārlecis
+            }
+        }
+
+        // Pārbaude, vai cilvēciņš ir sadūries ar kaktusu
+        function checkCollision() {
+            const dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
+            const cactusLeftPosition = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+
+            // Ja cilvēciņš un kaktuss ir ļoti tuvu
+            if (cactusLeftPosition > 20 && cactusLeftPosition < 80 && dinoBottom <= 50) {
+                // Izsist alert ar rezultātu
+                const restart = confirm(`Spēle beigusies! Tu ieguvi ${score} punktus. Roberts drīkst tevi nobiedēt 1* jo neieguvi 200 punktus. Vai vēlies spēlēt vēlreiz?`);
+                if (restart) {
+                    resetGame(); // Atsākt spēli
+                }
+            }
+        }
+
+        // Funkcija spēles resetēšanai
+        function resetGame() {
+            score = 0;
+            scoreDisplay.textContent = `Punkti: ${score}`;
+            cactusLeft = 900;
+            cactus.style.left = cactusLeft + "px";
+            cactusPassed = false;
+            dino.style.bottom = "50px";
+        }
+
+        // Palaist kaktusa pārvietošanu un sadursmes pārbaudi
+        setInterval(() => {
+            moveCactus();
+            checkCollision();
+        }, 20); // Kaktusa pārvietošanas funkcija darbojas katru 20ms
+
+    </script>
+</body>
+</html>
