@@ -185,6 +185,10 @@
             if (event.code === "Space") jump();
         });
 
+        // Klausās peli un pieskārienus
+        document.addEventListener("click", jump); // Uzklikšķinot ar peli
+        document.addEventListener("touchstart", jump); // Uz pieskāriena uz ekrāna (mobilajām ierīcēm)
+
         // Kaktusa pārvietošanas funkcija
         function moveCactus() {
             cactusLeft -= 5; // Kaktuss pārvietojas pa kreisi
