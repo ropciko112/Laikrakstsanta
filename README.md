@@ -161,7 +161,7 @@ footer p {
         <a href="#fakti">Interesanti fakti</a>
         <a href="#laikapstakli">Laikapstākļi</a>
         <a href="#joks">Dienas Joks</a>
-        <a href="docs/galerija.html" target="_blank">Galerija</a>
+        <a href="docs/galerija.html">Galerija</a>
     </nav>
 
     <!-- Vārda diena -->
