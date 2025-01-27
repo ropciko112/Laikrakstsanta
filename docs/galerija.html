@@ -72,31 +72,37 @@
     <div class="overlay" id="overlay">
         <img src="" alt="Pilnekrāna attēls">
     </div>
-    <script>
-        const imageFiles = [
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/a89449563a742c910a117f190694936ac9f25790/Image/attels1.jpg",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/a89449563a742c910a117f190694936ac9f25790/Image/attels2.jpg",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/a89449563a742c910a117f190694936ac9f25790/Image/attels3.jpg"
-            // Pievieno vairāk attēlu URL pēc nepieciešamības
-        ];
-        const gallery = document.querySelector('.gallery');
-        const overlay = document.getElementById('overlay');
-        const overlayImage = overlay.querySelector('img');
-        // Pievieno attēlus galerijai
-        imageFiles.forEach((src) => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = "Attēls";
-            img.addEventListener('click', () => {
-                overlayImage.src = src;
-                overlay.classList.add('active');
-            });
-            gallery.appendChild(img);
+   <script>
+    const imageFiles = [
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels1.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels2.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels3.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels4.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels5.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels6.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels7.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels8.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels9.jpg",
+        "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/attels10.jpg"
+    ];
+    const gallery = document.querySelector('.gallery');
+    const overlay = document.getElementById('overlay');
+    const overlayImage = overlay.querySelector('img');
+    // Pievieno attēlus galerijai
+    imageFiles.forEach((src) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = "Attēls";
+        img.addEventListener('click', () => {
+            overlayImage.src = src;
+            overlay.classList.add('active');
         });
-        // Slēdz pilnekrāna skatu
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('active');
-        });
-    </script>
+        gallery.appendChild(img);
+    });
+    // Slēdz pilnekrāna skatu
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+    });
+</script>
 </body>
 </html>
