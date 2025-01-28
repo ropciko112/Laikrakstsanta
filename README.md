@@ -184,16 +184,36 @@
     <div id="fakti" class="section">
         <h3>Interesanti fakti par: Dzīvniekiem.</h3>
         <ul class="facts-list">
-            <li><strong>Ziloņi ir vienīgie dzīvnieki, kas nevar lēkt</strong><br />To masīvais ķermenis un īpašā kāju uzbūve to padara fiziski neiespējamu.</li>
-            <li><strong>Panda mazuļi dzimst sīki – vēl mazāki nekā pele</strong><br />Lielākie panda mazuļi sver tikai apmēram 100 gramus, bet pieaugušie var sverēt līdz 150 kg.</li>
-            <li><strong>Zirņu gliemeži var gulēt līdz 3 gadiem</strong><br />Ja apstākļi nav labvēlīgi, tie spēj iemiglot uz ilgu laiku, līdz atkal ir piemērota vide.</li>
-            <li><strong>Austrālijas krokodili spēj peldēt ar ātrumu līdz 29 km/h</strong><br />Tie ir vieni no ātrākajiem reptīļiem ūdenī.</li>
-            <li><strong>Govs var uzkāpt augšup pa kāpnēm, bet nevar nokāpt lejā</strong><br />To kāju uzbūve un lielais ķermenis to padara gandrīz neiespējamu.</li>
-            <li><strong>Delfīni spēj atpazīt sevi spogulī</strong><br />Tie ir vieni no nedaudzajiem dzīvniekiem, kas demonstrē pašapziņu.</li>
-            <li><strong>Ķirzakas spēj atjaunot savu asti, ja tā ir zaudēta</strong><br />Šī spēja saucas regenerācija, un tā ir viens no interesantākajiem dzīvnieku valsts fenomeniem.</li>
-            <li><strong>Karūsu zivis ir vienīgie dzīvnieki, kas spēj pārvērsties no mātītes uz tēviņu</strong><br />Tas notiek, ja grupā nav pietiekami daudz tēviņu.</li>
-            <li><strong>Sienāži spēj gulēt ar vienu atvērtu aci</strong><br />Tas ļauj viņiem būt modriem un uzmanīgiem pret plēsējiem, pat atpūšoties.</li>
-            <li><strong>Kāpuru sirds atrodas to galvā</strong><br />Šie vēžveidīgie ir unikāli ar to, ka to sirds, smadzenes un citi orgāni atrodas galvas daļā.</li>
+           <li>
+<p><strong>Sirds sāk darboties jau pirms dzim&scaron;anas</strong><br />Cilvēka sirds sāk sisties apmēram 4 nedēļas pēc ieņem&scaron;anas, un tā turpina darboties visu mūžu.</p>
+</li>
+<li>
+<p><strong>Sirds ikdienā saspiežas apmēram 100 000 reizes</strong><br />Tas nozīmē, ka vidēji mūža laikā sirds saspiežas vairāk nekā 2,5 miljardus reižu.</p>
+</li>
+<li>
+<p><strong>Asinsvadi cilvēka ķermenī, ja tos savienotu vienā garā līnijā, varētu aptvert Zemi 2,5 reizes</strong><br />Kopējais asinsvadu garums ir apmēram 100 000 kilometru.</p>
+</li>
+<li>
+<p><strong>Sirds izspiež apmēram 70 ml asins ar katru sitienu</strong><br />Tas nozīmē, ka vienā minūtē sirds izspiež apmēram 5 litrus asins.</p>
+</li>
+<li>
+<p><strong>Asinis veic pilnu apgriezienu ķermenī apmēram 20 sekunžu laikā</strong><br />Tas nozīmē, ka asinis pārvietojas ar ātrumu aptuveni 2 km/h.</p>
+</li>
+<li>
+<p><strong>Sirds ir vienīgais orgāns, kas spēj darboties neatkarīgi no smadzenēm</strong><br />Tam ir savs elektriskais sistēma, kas kontrolē tā darbību.</p>
+</li>
+<li>
+<p><strong>Asins sastāvā ir 55% plazma un 45% asins &scaron;ūnas</strong><br />Plazma galvenokārt sastāv no ūdens, bet asins &scaron;ūnas ietver sarkanos un baltos asinsķermenī&scaron;us, kā arī trombocītus.</p>
+</li>
+<li>
+<p><strong>Sirds svarā ir tikai apmēram 300 grami</strong><br />Neskatoties uz mazo svaru, tā ir viena no visspēcīgākajām muskuļu grupām cilvēka ķermenī.</p>
+</li>
+<li>
+<p><strong>Asinsgrupu sistēmu atklāja 1901. gadā</strong><br />Austrie&scaron;u ārsts Kārlis Land&scaron;teiners atklāja, ka cilvēkiem ir dažādas asins grupas, kas ir būtiski asins pārlie&scaron;anas procedūrām.</p>
+</li>
+<li>
+<p><strong>Sirds var turpināt sisties pat ārpus ķermeņa</strong><br />Ja sirdij ir piegādāts pietiekams daudzums skābekļa, tā var turpināt darboties pat tad, ja tā ir izņemta no ķermeņa.</p>
+</li>
         </ul>
     </div>
     <!-- Laikapstākļi -->
