@@ -164,7 +164,7 @@
 </head>
 <body>
     <header>
-        <div class="header-left">Nr. 11</div>
+        <div class="header-left">Nr. 12</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span>
@@ -178,11 +178,11 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin: Kārlis, Spodris.</p>
+        <p>Šodien vārda dienas svin: Aivars, Valērijs, Bille..</p>
     </div>
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par: Dzīvniekiem.</h3>
+        <h3>Interesanti fakti par: Sirdi un asinsriti.</h3>
         <ul class="facts-list">
            <li>
 <p><strong>Sirds sāk darboties jau pirms dzim&scaron;anas</strong><br />Cilvēka sirds sāk sisties apmēram 4 nedēļas pēc ieņem&scaron;anas, un tā turpina darboties visu mūžu.</p>
@@ -224,7 +224,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i5bnr.jpg" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i9blm.jpg" />
     </div>
     <footer>
         <p class="footer-text-center">&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
