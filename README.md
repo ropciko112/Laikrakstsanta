@@ -164,7 +164,7 @@
 </head>
 <body>
     <header>
-        <div class="header-left">Nr. 12</div>
+        <div class="header-left">Nr. 13</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span>
@@ -178,41 +178,41 @@
     <!-- Vārda diena -->
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin: Aivars, Valērijs, Bille..</p>
+        <p>Šodien vārda dienas svin: Tīna, Valentīna, Pārsla.</p>
     </div>
     <!-- Interesanti fakti -->
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par: Sirdi un asinsriti.</h3>
+        <h3>Interesanti fakti par: Saldējumu.</h3>
         <ul class="facts-list">
-           <li>
-<p><strong>Sirds sāk darboties jau pirms dzim&scaron;anas</strong><br />Cilvēka sirds sāk sisties apmēram 4 nedēļas pēc ieņem&scaron;anas, un tā turpina darboties visu mūžu.</p>
+          <li>
+<p><strong>Saldējums ir viens no vecākajiem desertiem pasaulē</strong><br />Pirmās saldējuma formas parādījās jau senajā Ķīnā ap 200. gadu pirms mūsu ēras, kad maisīja ledu ar augļu sulām.</p>
 </li>
 <li>
-<p><strong>Sirds ikdienā saspiežas apmēram 100 000 reizes</strong><br />Tas nozīmē, ka vidēji mūža laikā sirds saspiežas vairāk nekā 2,5 miljardus reižu.</p>
+<p><strong>Marko Polo atveda saldējuma recepti no Āzijas uz Eiropu</strong><br />Leģenda vēsta, ka viņ&scaron; 13. gadsimtā atgriezās Itālijā ar recepti, kas līdzīga mūsdienu &scaron;erbetam.</p>
 </li>
 <li>
-<p><strong>Asinsvadi cilvēka ķermenī, ja tos savienotu vienā garā līnijā, varētu aptvert Zemi 2,5 reizes</strong><br />Kopējais asinsvadu garums ir apmēram 100 000 kilometru.</p>
+<p><strong>Pirmais saldējuma fabrika tika atvērta ASV 1851. gadā</strong><br />To izveidoja Baltimorē, un tas bija sākums saldējuma masveida ražo&scaron;anai.</p>
 </li>
 <li>
-<p><strong>Sirds izspiež apmēram 70 ml asins ar katru sitienu</strong><br />Tas nozīmē, ka vienā minūtē sirds izspiež apmēram 5 litrus asins.</p>
+<p><strong>Vanilijas saldējums ir vispopulārākais saldējuma gar&scaron;a pasaulē</strong><br />Neskatoties uz daudzajām gar&scaron;u variācijām, klasiskā vanilija joprojām ir favorīts.</p>
 </li>
 <li>
-<p><strong>Asinis veic pilnu apgriezienu ķermenī apmēram 20 sekunžu laikā</strong><br />Tas nozīmē, ka asinis pārvietojas ar ātrumu aptuveni 2 km/h.</p>
+<p><strong>Saldējuma konuss tika izgudrots nejau&scaron;i</strong><br />1904. gadā St. Louis Pasaules izstādē saldējuma pārdevējam beidzās trauki, un viņ&scaron; izmantoja blakus eso&scaron;ās vafeļu pārdevēja vafeles, lai pasniegtu saldējumu.</p>
 </li>
 <li>
-<p><strong>Sirds ir vienīgais orgāns, kas spēj darboties neatkarīgi no smadzenēm</strong><br />Tam ir savs elektriskais sistēma, kas kontrolē tā darbību.</p>
+<p><strong>Saldējums ir zināms arī kā "emocionālā pārtika"</strong><br />Pētījumi rāda, ka saldējums var uzlabot garstāvokli, jo tas stimulē smadzeņu zonas, kas saistītas ar prieku.</p>
 </li>
 <li>
-<p><strong>Asins sastāvā ir 55% plazma un 45% asins &scaron;ūnas</strong><br />Plazma galvenokārt sastāv no ūdens, bet asins &scaron;ūnas ietver sarkanos un baltos asinsķermenī&scaron;us, kā arī trombocītus.</p>
+<p><strong>Itālijā ir vairāk nekā 20 000 saldējuma veikalu (gelateria)</strong><br />Itāļi ir īsti saldējuma cienītāji, un katrs veikals bieži piedāvā unikālas gar&scaron;as.</p>
 </li>
 <li>
-<p><strong>Sirds svarā ir tikai apmēram 300 grami</strong><br />Neskatoties uz mazo svaru, tā ir viena no visspēcīgākajām muskuļu grupām cilvēka ķermenī.</p>
+<p><strong>Saldējums bija īpa&scaron;s gardums Amerikas koloniju laikā</strong><br />Džordžs Va&scaron;ingtons un Tomass Džefersons abi bija lieli saldējuma cienītāji, un viņu receptes joprojām ir saglabāju&scaron;ās.</p>
 </li>
 <li>
-<p><strong>Asinsgrupu sistēmu atklāja 1901. gadā</strong><br />Austrie&scaron;u ārsts Kārlis Land&scaron;teiners atklāja, ka cilvēkiem ir dažādas asins grupas, kas ir būtiski asins pārlie&scaron;anas procedūrām.</p>
+<p><strong>Japānā ir saldējums ar zivju gar&scaron;u</strong><br />Viens no dīvainākajiem saldējuma veidiem ir "ikasumi", kas pagatavots no zivju kaviāra.</p>
 </li>
 <li>
-<p><strong>Sirds var turpināt sisties pat ārpus ķermeņa</strong><br />Ja sirdij ir piegādāts pietiekams daudzums skābekļa, tā var turpināt darboties pat tad, ja tā ir izņemta no ķermeņa.</p>
+<p><strong>Saldējums kosmosā ir īpa&scaron;i populārs</strong><br />Astronauti Starptautiskajā kosmosa stacijā var baudīt saldējumu, kas ir speciāli sagatavots, lai izturētu bezsvara stāvokli.</p>
 </li>
         </ul>
     </div>
@@ -224,7 +224,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i9blm.jpg" />
+        <img class="footer-image" src="https://photos.google.com/share/AF1QipOgUjug9cznXNpk0Ofk4CFczug4Gd_KF9v000Q2soY9Fh5opB88ojteFhHuPmuwbA/photo/AF1QipNTsMKaWCwra720NKZuSDtAsZ-0wr4yoETGUWja?key=MUZTTFM4V0RZcTBuNkhqVjNhdXZ6amJZWGRZQVJ3" />
     </div>
     <footer>
         <p class="footer-text-center">&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
