@@ -5,7 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antas Lecamspēle</title>
     <style>
-        /* Tavi esošie stili */
+        /* Globāli stili */
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #a1832b;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+        .header-left, .header-right {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Spēles stili */
+        #game {
+            position: relative;
+            width: 900px;
+            height: 300px;
+            margin: 20px auto;
+            background-image: 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif'), 
+                url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/giphy.gif');
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            background-position: left, center, right;
+            border: 2px solid #333;
+            overflow: hidden;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        #dino {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/image-removebg-preview%20(3).png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #cactus {
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/image-removebg-preview%20(4).png');
+            background-size: cover;
+        }
+
+        /* Foteris */
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: 'Georgia', serif;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .footer-text-center {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -17,15 +133,17 @@
             <span id="current-time">Ielādē laiku...</span>
         </div>
     </header>
-
+    
     <nav>
           <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
        <a href="https://ropciko112.github.io/Laikrakstsanta/docs/galerija.html">Galerija</a>
     </nav>
 
+
     <div id="game">
         <div id="score">Punkti: 0</div>
         <div id="dino"></div>
+        <div id="cactus"></div>
     </div>
 
     <footer>
@@ -34,9 +152,12 @@
 
     <script>
         const dino = document.getElementById("dino");
+        const cactus = document.getElementById("cactus");
         const scoreDisplay = document.getElementById("score");
         let jumping = false;
         let score = 0;
+        let cactusLeft = 900;
+        let cactusPassed = false; // Lai sekotu līdzi, vai kaktuss ir pārlēkts
 
         // Cilvēciņš lec funkcija
         function jump() {
@@ -68,38 +189,53 @@
         document.addEventListener("click", jump); // Uzklikšķinot ar peli
         document.addEventListener("touchstart", jump); // Uz pieskāriena uz ekrāna (mobilajām ierīcēm)
 
-        // Funkcija, kas izveido jaunu kaktusu
-        function createCactus() {
-            const cactus = document.createElement("div");
-            cactus.classList.add("cactus");
-            cactus.style.position = "absolute";
-            cactus.style.bottom = "50px";
-            cactus.style.width = "50px";
-            cactus.style.height = "50px";
-            cactus.style.backgroundImage = "url('https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/docs/image-removebg-preview%20(4).png')";
-            cactus.style.backgroundSize = "cover";
-            document.getElementById("game").appendChild(cactus);
+        // Kaktusa pārvietošanas funkcija
+        function moveCactus() {
+            cactusLeft -= 5; // Kaktuss pārvietojas pa kreisi
+            if (cactusLeft < -50) {
+                cactusLeft = 900; // Kaktuss atgriežas no labās malas
+                cactusPassed = false; // Resetē, lai nākamais kaktuss būtu jāpaņem
+            }
+            cactus.style.left = cactusLeft + "px";
 
-            let cactusLeft = 900; // Kaktuss sākas labajā malā
-            let moveCactusInterval = setInterval(() => {
-                cactusLeft -= 5;
-                cactus.style.left = cactusLeft + "px";
+            // Pārbaude, vai cilvēciņš ir pārlec kaktusu
+            if (cactusLeft < 50 && cactusLeft > 0 && !cactusPassed) {
+                score++; // Pievieno punktu
+                scoreDisplay.textContent = Punkti: ${score};
+                cactusPassed = true; // Atzīmē, ka kaktuss ir pārlecis
+            }
+        }
 
-                // Ja kaktuss pārsniedz ekrāna malu, noņem to
-                if (cactusLeft < -50) {
-                    clearInterval(moveCactusInterval);
-                    cactus.remove();
+        // Pārbaude, vai cilvēciņš ir sadūries ar kaktusu
+        function checkCollision() {
+            const dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
+            const cactusLeftPosition = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+
+            // Ja cilvēciņš un kaktuss ir ļoti tuvu
+            if (cactusLeftPosition > 20 && cactusLeftPosition < 80 && dinoBottom <= 50) {
+                // Izsist alert ar rezultātu
+                const restart = confirm(Spēle beigusies! Tu ieguvi ${score} punktus. Vai vēlies spēlēt vēlreiz?);
+                if (restart) {
+                    resetGame(); // Atsākt spēli
                 }
-            }, 20);
+            }
         }
 
-        // Funkcija, kas ģenerē kaktusus nejaušos intervālos
-        function randomCactusSpawner() {
-            setInterval(createCactus, Math.random() * (3000 - 1000) + 1000); // Kaktuss parādās pēc 1 līdz 3 sekundēm
+        // Funkcija spēles resetēšanai
+        function resetGame() {
+            score = 0;
+            scoreDisplay.textContent = Punkti: ${score};
+            cactusLeft = 900;
+            cactus.style.left = cactusLeft + "px";
+            cactusPassed = false;
+            dino.style.bottom = "50px";
         }
 
-        // Uzsāk kaktusu parādīšanu
-        randomCactusSpawner();
+        // Palaist kaktusa pārvietošanas un sadursmes pārbaudi
+        setInterval(() => {
+            moveCactus();
+            checkCollision();
+        }, 20); // Kaktusa pārvietošanas funkcija darbojas katru 20ms
 
     </script>
 </body>
