@@ -224,7 +224,7 @@
     <!-- Dienas Joks -->
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://photos.google.com/share/AF1QipOgUjug9cznXNpk0Ofk4CFczug4Gd_KF9v000Q2soY9Fh5opB88ojteFhHuPmuwbA/photo/AF1QipNTsMKaWCwra720NKZuSDtAsZ-0wr4yoETGUWja?key=MUZTTFM4V0RZcTBuNkhqVjNhdXZ6amJZWGRZQVJ3" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/QR%20Code%2019d70eb9-16da-4540-8063-8b2a0a359d78.png" />
     </div>
     <footer>
         <p class="footer-text-center">&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
