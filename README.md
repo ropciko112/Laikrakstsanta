@@ -191,10 +191,10 @@
     <div id="fakti" class="section">
         <h3>Interesanti fakti par: Antu.</h3>
         <ul class="facts-list">
-            <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti</li>
-            <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs</li>
+            <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti </li>
+            <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs </li>
             <li><strong>Antas mīļākais ēdiens ir medus kūka.</li>
-            <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu></li>
+            <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu </li>
         </ul>
     </div>
 
