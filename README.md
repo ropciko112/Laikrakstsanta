@@ -170,7 +170,7 @@
     </audio>
 
     <header>
-        <div class="header-left">Nr. 13</div>
+        <div class="header-left">Nr. 14</div>
         <h1>Laikraksts ANTA</h1>
         <div class="header-right">
             <span id="current-date">Ielādē datumu...</span>
@@ -185,16 +185,16 @@
 
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
-        <p>Šodien vārda dienas svin: Tīna, Valentīna, Pārsla.</p>
+        <p>Šodien vārda dienas svin: Lolita, Vitolds.</p>
     </div>
 
     <div id="fakti" class="section">
-        <h3>Interesanti fakti par: Saldējumu.</h3>
+        <h3>Interesanti fakti par: Antu.</h3>
         <ul class="facts-list">
-            <li><strong>Saldējums ir viens no vecākajiem desertiem pasaulē</strong><br />Pirmās saldējuma formas parādījās jau senajā Ķīnā ap 200. gadu p.m.ē., sajaucot ledu ar augļu sulām.</li>
-            <li><strong>Marko Polo atveda saldējuma recepti no Āzijas uz Eiropu</strong><br />Viņš 13. gadsimtā atgriezās Itālijā ar recepti, kas līdzīga šerbetam.</li>
-            <li><strong>Pirmais saldējuma fabrika tika atvērta ASV 1851. gadā</strong><br />Baltimorē, sākot masu ražošanu.</li>
-            <li><strong>Vanilijas saldējums ir vispopulārākais</strong></li>
+            <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti</li>
+            <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs</li>
+            <li><strong>Antas mīļākais ēdiens ir medus kūka.</li>
+            <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu></li>
         </ul>
     </div>
 
