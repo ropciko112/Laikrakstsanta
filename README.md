@@ -202,7 +202,7 @@
 
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
-        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/QR%20Code%2019d70eb9-16da-4540-8063-8b2a0a359d78.png" />
+        <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/20250416_1136_Kafija%20un%20burk%C4%81ni_remix_01jryvrwbte56s703aad3vx95k.png" />
     </div>
 
     <footer>
