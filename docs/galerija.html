@@ -1,229 +1,223 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antas dienas joku galerija</title>
-    <style>
-        /* Pamata stili */
-        body {
-            font-family: "Georgia", "Times New Roman", serif;
-            background-color: #a1832b;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antas dienas joku galerija</title>
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background-color: #a1832b;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-        /* Galvene */
-        header {
-            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
+    header {
+      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        .header-left, .header-right {
-            font-size: 14px;
-        }
+    .header-left, .header-right {
+      font-size: 14px;
+    }
 
-        h1 {
-            font-size: 36px;
-            margin: 0;
-            font-family: 'Georgia', serif;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
-        /* Navigācija */
-        nav {
-            background-color: #444;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
+    nav {
+      background-color: #444;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 16px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-        nav a:hover {
-            color: #ddd;
-            transform: translateY(-2px);
-        }
+    nav a:hover {
+      color: #ddd;
+      transform: translateY(-2px);
+    }
 
-        /* Galerija */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
 
-        /* Laika un datuma rādītājs */
-        #current-date, #current-time {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 16px;
-            display: inline-block;
-            margin: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    #current-date, #current-time {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      display: inline-block;
+      margin: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Kājene */
-        footer {
-            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-family: 'Georgia', serif;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
-        }
+    footer {
+      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Georgia', serif;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        footer p {
-            margin: 0;
-            font-size: 18px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
+    footer p {
+      margin: 0;
+      font-size: 18px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
 
-        /* Overlay (attēlu pilnekrāna skats) */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 999;
+    }
 
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-        }
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
 
-        .overlay.active {
-            visibility: visible;
-            opacity: 1;
-        }
+    .overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
 
-        .overlay:hover {
-            cursor: pointer;
-        }
-    </style>
+    .overlay:hover {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-left">....</div>
-        <h1>Antas dienas joku galerija</h1>
-        <div class="header-right">
-            <span id="current-date">Ielādē datumu...</span><br>
-            <span id="current-time">Ielādē laiku...</span>
-        </div>
-    </header>
-
-    <nav>
-        <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
-        <a href="https://ropciko112.github.io/Laikrakstsanta/docs/game.html">Spēle</a>
-    </nav>
-
-    <div class="gallery" id="gallery">
-        <!-- Attēli tiks ģenerēti ar JavaScript -->
+  <header>
+    <div class="header-left">NR. 10</div>
+    <h1>Antas dienas joku galerija</h1>
+    <div class="header-right">
+      <span id="current-date">Ielādē datumu...</span><br />
+      <span id="current-time">Ielādē laiku...</span>
     </div>
+  </header>
 
-    <div class="overlay" id="overlay">
-        <img src="" alt="Pilnekrāna attēls">
-    </div>
+  <nav>
+    <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
+    <a href="https://ropciko112.github.io/Laikrakstsanta/docs/game.html">Spēle</a>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 Antas dienas joku galerija. Visas tiesības aizsargātas.</p>
-    </footer>
+  <div class="gallery" id="gallery"></div>
 
-    <script>
-        const imageFiles = [
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/QR%20Code%2019d70eb9-16da-4540-8063-8b2a0a359d78.png"
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i9blm.jpg",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gj29l.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gm8cf.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gmez5.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gq0gg.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9gub22.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hbp2q.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hlyy8.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9hpxoo.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/9i0vkz.jpg?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Angry Girl Meme.gif?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/6a55d39e4aa9e462d3c1e8b74268500734c60884/Image/Ekrānuzņēmums%202025-01-20%20084723.png?raw=true",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/WhatsApp%20att%C4%93ls%202025-01-27%20plkst.%2013.02.49_6915ce2f.jpg",
-            "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/9i5bnr.jpg"
-        ];
-        const gallery = document.querySelector('.gallery');
-        const overlay = document.getElementById('overlay');
-        const overlayImage = overlay.querySelector('img');
-        imageFiles.forEach((src) => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = "Attēls";
-            img.addEventListener('click', () => {
-                overlayImage.src = src;
-                overlay.classList.add('active');
-            });
-            gallery.appendChild(img);
-        });
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('active');
-        });
+  <div class="overlay" id="overlay">
+    <img src="" alt="Pilnekrāna attēls" />
+  </div>
 
-        function updateTimeAndDate() {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0');
-            const year = now.getFullYear();
-            const timeString = `${hours}:${minutes}:${seconds}`;
-            const dateString = `${day}.${month}.${year}`;
-            document.getElementById('current-time').textContent = timeString;
-            document.getElementById('current-date').textContent = dateString;
-        }
+  <footer>
+    <p>&copy; 2025 Antas dienas joku galerija. Visas tiesības aizsargātas.</p>
+  </footer>
 
-        setInterval(updateTimeAndDate, 1000);
-    </script>
+  <script>
+    const imageFiles = [
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/QR%20Code%2019d70eb9-16da-4540-8063-8b2a0a359d78.png",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9i9blm.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9gj29l.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9gm8cf.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9gmez5.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9gq0gg.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9gub22.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9hbp2q.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9hlyy8.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9hpxoo.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9i0vkz.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/Angry%20Girl%20Meme.gif",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/Ekrānuzņēmums%202025-01-20%20084723.png",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/WhatsApp%20att%C4%93ls%202025-01-27%20plkst.%2013.02.49_6915ce2f.jpg",
+      "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9i5bnr.jpg"
+    ];
+
+    const gallery = document.getElementById('gallery');
+    const overlay = document.getElementById('overlay');
+    const overlayImage = overlay.querySelector('img');
+
+    imageFiles.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = "Joks";
+      img.addEventListener('click', () => {
+        overlayImage.src = src;
+        overlay.classList.add('active');
+      });
+      gallery.appendChild(img);
+    });
+
+    overlay.addEventListener('click', () => {
+      overlay.classList.remove('active');
+    });
+
+    function updateTimeAndDate() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const year = now.getFullYear();
+      document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('current-date').textContent = `${day}.${month}.${year}`;
+    }
+
+    setInterval(updateTimeAndDate, 1000);
+    updateTimeAndDate();
+  </script>
 </body>
 </html>
