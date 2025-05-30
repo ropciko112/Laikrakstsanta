@@ -195,8 +195,6 @@
             <li><strong>Antas mīļākais ēdiens ir medus kūka.
             <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu.
 
-    </div>
-
     <div id="laikapstakli" class="section">
         <h3>Laikapstākļi Rīgā</h3>
         <div id="weather">Ielādē laikapstākļus...</div>
