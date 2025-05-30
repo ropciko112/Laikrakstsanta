@@ -194,7 +194,7 @@
             <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs.
             <li><strong>Antas mīļākais ēdiens ir medus kūka.
             <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu.
-        </ul>
+
     </div>
 
     <div id="laikapstakli" class="section">
