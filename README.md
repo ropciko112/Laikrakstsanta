@@ -251,5 +251,3 @@
         setInterval(updateTimeAndDate, 1000);
         getWeather();
     </script>
-</body>
-</html>
