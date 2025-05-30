@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antas Lecamspēle</title>
     <style>
-        /* Globāli stili */
         body {
             font-family: "Georgia", "Times New Roman", serif;
             background-color: #a1832b;
@@ -32,7 +32,6 @@
         h1 {
             font-size: 36px;
             margin: 0;
-            font-family: 'Georgia', serif;
         }
 
         nav {
@@ -53,7 +52,6 @@
             color: #ddd;
         }
 
-        /* Spēles stili */
         #game {
             position: relative;
             width: 900px;
@@ -101,7 +99,6 @@
             background-size: cover;
         }
 
-        /* Foteris */
         footer {
             background-color: #2c2c2c;
             color: white;
@@ -134,10 +131,9 @@
     </header>
     
     <nav>
-          <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
-       <a href="https://ropciko112.github.io/Laikrakstsanta/docs/galerija.html">Galerija</a>
+        <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
+        <a href="https://ropciko112.github.io/Laikrakstsanta/docs/galerija.html">Galerija</a>
     </nav>
-
 
     <div id="game">
         <div id="score">Punkti: 0</div>
@@ -156,9 +152,8 @@
         let jumping = false;
         let score = 0;
         let cactusLeft = 900;
-        let cactusPassed = false; // Lai sekotu līdzi, vai kaktuss ir pārlēkts
+        let cactusPassed = false;
 
-        // Cilvēciņš lec funkcija
         function jump() {
             if (jumping) return;
             jumping = true;
@@ -179,63 +174,63 @@
             }, 20);
         }
 
-        // Klausies "Space" taustiņu
         document.addEventListener("keydown", event => {
             if (event.code === "Space") jump();
         });
 
-        // Klausās peli un pieskārienus
-        document.addEventListener("click", jump); // Uzklikšķinot ar peli
-        document.addEventListener("touchstart", jump); // Uz pieskāriena uz ekrāna (mobilajām ierīcēm)
+        document.addEventListener("click", jump);
+        document.addEventListener("touchstart", jump);
 
-        // Kaktusa pārvietošanas funkcija
         function moveCactus() {
-            cactusLeft -= 5; // Kaktuss pārvietojas pa kreisi
+            cactusLeft -= 5;
             if (cactusLeft < -50) {
-                cactusLeft = 900; // Kaktuss atgriežas no labās malas
-                cactusPassed = false; // Resetē, lai nākamais kaktuss būtu jāpaņem
+                cactusLeft = 900;
+                cactusPassed = false;
             }
             cactus.style.left = cactusLeft + "px";
 
-            // Pārbaude, vai cilvēciņš ir pārlec kaktusu
             if (cactusLeft < 50 && cactusLeft > 0 && !cactusPassed) {
-                score++; // Pievieno punktu
-                scoreDisplay.textContent = Punkti: ${score};
-                cactusPassed = true; // Atzīmē, ka kaktuss ir pārlecis
+                score++;
+                scoreDisplay.textContent = `Punkti: ${score}`;
+                cactusPassed = true;
             }
         }
 
-        // Pārbaude, vai cilvēciņš ir sadūries ar kaktusu
         function checkCollision() {
             const dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
             const cactusLeftPosition = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
-            // Ja cilvēciņš un kaktuss ir ļoti tuvu
             if (cactusLeftPosition > 20 && cactusLeftPosition < 80 && dinoBottom <= 50) {
-                // Izsist alert ar rezultātu
-                const restart = confirm(Spēle beigusies! Tu ieguvi ${score} punktus. Vai vēlies spēlēt vēlreiz?);
+                const restart = confirm(`Spēle beigusies! Tu ieguvi ${score} punktus. Vai vēlies spēlēt vēlreiz?`);
                 if (restart) {
-                    resetGame(); // Atsākt spēli
+                    resetGame();
                 }
             }
         }
 
-        // Funkcija spēles resetēšanai
         function resetGame() {
             score = 0;
-            scoreDisplay.textContent = Punkti: ${score};
+            scoreDisplay.textContent = `Punkti: ${score}`;
             cactusLeft = 900;
             cactus.style.left = cactusLeft + "px";
             cactusPassed = false;
             dino.style.bottom = "50px";
         }
 
-        // Palaist kaktusa pārvietošanas un sadursmes pārbaudi
         setInterval(() => {
             moveCactus();
             checkCollision();
-        }, 20); // Kaktusa pārvietošanas funkcija darbojas katru 20ms
+        }, 20);
 
+        // Datuma un laika ielāde
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById("current-date").textContent = now.toLocaleDateString("lv-LV");
+            document.getElementById("current-time").textContent = now.toLocaleTimeString("lv-LV");
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
     </script>
 </body>
 </html>
