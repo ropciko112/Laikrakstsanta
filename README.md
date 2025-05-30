@@ -162,12 +162,6 @@
     </style>
 </head>
 <body>
-    <!-- Automātiskā dziesmas atskaņošana -->
-    <audio autoplay hidden>
-        <source src="docs/Antas piedzīvojumi.mp3" type="audio/mpeg">
-        Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
-    </audio>
-
     <header>
         <div class="header-left">Nr. 14</div>
         <h1>Laikraksts ANTA</h1>
@@ -182,6 +176,15 @@
         <a href="docs/game.html">Spēle</a>
     </nav>
 
+    <!-- MP3 atskaņotājs sadaļa -->
+    <div style="text-align: center; background-color: #fff; padding: 20px; margin: 20px auto; border-radius: 12px; width: 80%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h3>🎵 Klausies dziesmu "Antas piedzīvojumi"</h3>
+        <audio controls>
+            <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Antas%20piedz%C4%ABvojumi.mp3%20(1)" type="audio/mpeg">
+            Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
+        </audio>
+    </div>
+
     <div id="vardadiena" class="section">
         <h3>Vārda diena</h3>
         <p>Šodien vārda dienas svin: Lolita, Vitolds.</p>
@@ -190,10 +193,12 @@
     <div id="fakti" class="section">
         <h3>Interesanti fakti par: Antu.</h3>
         <ul class="facts-list">
-            <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti.
-            <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs.
-            <li><strong>Antas mīļākais ēdiens ir medus kūka.
-            <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu.
+            <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti.</strong></li>
+            <li><strong>Antai patīk kad viņu kāds cenšas ievērt durvīs.</strong></li>
+            <li><strong>Antas mīļākais ēdiens ir medus kūka.</strong></li>
+            <li><strong>Anta nāk uz darbu ātrāk lai varētu paspēlēties ar sunīšu mantiņu.</strong></li>
+        </ul>
+    </div>
 
     <div id="laikapstakli" class="section">
         <h3>Laikapstākļi Rīgā</h3>
