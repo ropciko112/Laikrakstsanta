@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laikraksts ANTA</title>
     <style>
-        /* Pamata stili */
         body {
             font-family: "Georgia", "Times New Roman", serif;
             background-color: #a1832b;
@@ -13,7 +13,6 @@
             color: #333;
         }
 
-        /* Galvene */
         header {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: white;
@@ -53,7 +52,6 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
-        /* Navigācija */
         nav {
             background-color: #444;
             padding: 15px;
@@ -76,7 +74,6 @@
             transform: translateY(-2px);
         }
 
-        /* Sekcijas */
         .section {
             padding: 30px;
             background-color: white;
@@ -114,7 +111,6 @@
             margin-bottom: 20px;
         }
 
-        /* Laikapstākļu sadaļa */
         #weather {
             background-color: rgba(240, 240, 240, 0.8);
             padding: 15px;
@@ -125,7 +121,6 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Kājene */
         footer {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: white;
@@ -176,7 +171,6 @@
         <a href="docs/game.html">Spēle</a>
     </nav>
 
-    <!-- MP3 atskaņotājs sadaļa -->
     <div style="text-align: center; background-color: #fff; padding: 20px; margin: 20px auto; border-radius: 12px; width: 80%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
         <h3>🎵 Klausies dziesmu "Antas piedzīvojumi"</h3>
         <audio controls>
@@ -205,6 +199,11 @@
         <div id="weather">Ielādē laikapstākļus...</div>
     </div>
 
+    <div id="groq-response" class="section">
+        <h3>Kas ir ātri valodas modeļi?</h3>
+        <p id="groq-answer">Ielādē atbildi...</p>
+    </div>
+
     <div id="joks" class="jokes-section">
         <h3>Dienas Joks</h3>
         <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/20250416_1136_Kafija%20un%20burk%C4%81ni_remix_01jryvrwbte56s703aad3vx95k.png" />
@@ -227,27 +226,56 @@
             document.getElementById('current-date').textContent = `${day}.${month}.${year}`;
         }
 
-        function getWeather() {
-            const weatherElement = document.getElementById('weather');
-            const apiKey = "1b5e2264709b5eacd217f25ebf6dc09a";
-            const city = "Riga";
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=lv`;
+        updateTimeAndDate();
+        setInterval(updateTimeAndDate, 1000);
 
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.main) {
-                        weatherElement.textContent = `Šodien Rīgā: ${data.weather[0].description}, ${data.main.temp}°C`;
-                    } else {
-                        weatherElement.textContent = "Nevarēja iegūt laikapstākļus.";
-                    }
-                })
-                .catch(error => {
-                    weatherElement.textContent = "Kļūda, mēģini vēlreiz.";
-                    console.error("Error fetching weather data:", error);
-                });
+        async function getWeather() {
+            const apiKey = 'cb3813b33fb4488bbf0201525240506';
+            const city = 'Riga';
+            try {
+                const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=lv`);
+                const data = await response.json();
+                const temperature = data.current.temp_c;
+                const condition = data.current.condition.text;
+                const wind = data.current.wind_kph;
+
+                document.getElementById('weather').innerHTML = `Rīgā šobrīd ir ${temperature}°C, ${condition.toLowerCase()}, vējš ${wind} km/h.`;
+            } catch (error) {
+                document.getElementById('weather').innerHTML = 'Neizdevās ielādēt laikapstākļus.';
+            }
         }
 
-        setInterval(updateTimeAndDate, 1000);
         getWeather();
+
+        async function fetchGroqAnswer() {
+            try {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer <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>'
+                    },
+                    body: JSON.stringify({
+                        model: 'llama3-8b-8192',
+                        messages: [
+                            {
+                                role: 'user',
+                                content: 'Explain the importance of fast language models.'
+                            }
+                        ],
+                        temperature: 0.7
+                    })
+                });
+
+                const data = await response.json();
+                const reply = data.choices?.[0]?.message?.content || 'Neizdevās iegūt atbildi.';
+                document.getElementById('groq-answer').innerText = reply;
+            } catch (error) {
+                document.getElementById('groq-answer').innerText = 'Neizdevās iegūt atbildi.';
+            }
+        }
+
+        fetchGroqAnswer();
     </script>
+</body>
+</html>
