@@ -209,7 +209,6 @@
         <h3>Dienas Joks</h3>
         <img class="footer-image" src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/refs/heads/main/Image/20250416_1136_Kafija%20un%20burk%C4%81ni_remix_01jryvrwbte56s703aad3vx95k.png" />
     </div>
-
     <footer>
         <p class="footer-text-center">&copy; 2025 Laikraksts ANTA. Visas tiesības aizsargātas. PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
     </footer>
