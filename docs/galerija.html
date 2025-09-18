@@ -4,110 +4,185 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Antas dienas joku galerija</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: "Georgia", "Times New Roman", serif;
-      background-color: #a1832b;
-      margin: 0;
-      padding: 0;
-      color: #333;
+    :root {
+      --primary: #2c5aa0;
+      --secondary: #d4af37;
+      --dark: #1a1a1a;
+      --light: #f8f9fa;
+      --accent: #e63946;
+      --gray: #6c757d;
+      --transition: all 0.3s ease;
     }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: linear-gradient(to bottom, #f0f2f5, #e6e9f0);
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Styles */
     header {
-      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      background: linear-gradient(135deg, var(--primary) 0%, #1e4088 100%);
       color: white;
-      padding: 20px 40px;
-      text-align: center;
+      padding: 1.2rem 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .header-left, .header-right {
-      font-size: 14px;
+    .header-left {
+      font-size: 0.9rem;
+      opacity: 0.9;
     }
 
-    h1 {
-      font-size: 36px;
+    .header-center h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
       margin: 0;
-      font-family: 'Georgia', serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    nav {
-      background-color: #444;
-      padding: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 16px;
-      transition: color 0.3s ease, transform 0.3s ease;
+    .header-right {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      min-width: 120px;
     }
 
-    nav a:hover {
-      color: #ddd;
-      transform: translateY(-2px);
+    #current-date, #current-time {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
+    /* Navigation */
+    nav {
+      background-color: white;
+      padding: 0.8rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    nav a {
+      color: var(--dark);
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      position: relative;
+      padding: 0.5rem 0;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    #current-date, #current-time {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 16px;
-      display: inline-block;
-      margin: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-family: 'Georgia', serif;
-      position: fixed;
-      width: 100%;
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
       bottom: 0;
-      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+      left: 0;
+      background-color: var(--secondary);
+      transition: var(--transition);
     }
 
-    footer p {
-      margin: 0;
-      font-size: 18px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    nav a:hover {
+      color: var(--primary);
     }
 
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    /* Main Content */
+    .main-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+      flex: 1;
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-header h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-header p {
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-item {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-caption {
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      color: var(--gray);
+    }
+
+    /* Overlay */
     .overlay {
       position: fixed;
       top: 0;
@@ -121,14 +196,20 @@
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.3s ease, visibility 0.3s ease;
-      z-index: 999;
+      z-index: 1000;
+    }
+
+    .overlay-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
     }
 
     .overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
     }
 
     .overlay.active {
@@ -136,34 +217,158 @@
       opacity: 1;
     }
 
-    .overlay:hover {
+    .overlay-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: white;
+      font-size: 2rem;
       cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay-close:hover {
+      background-color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, var(--dark) 0%, #2c2c2c 100%);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .social-links .fa-facebook:hover {
+      color: #3b5998;
+    }
+
+    .social-links .fa-linkedin:hover {
+      color: #0077b5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 1rem;
+      }
+      
+      .header-center h1 {
+        font-size: 1.8rem;
+      }
+      
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.3rem 0;
+      }
+      
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      
+      .social-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-left">NR.</div>
-    <h1>Antas dienas joku galerija</h1>
+    <div class="header-left">NR. 16</div>
+    <div class="header-center">
+      <h1>Antas dienas joku galerija</h1>
+    </div>
     <div class="header-right">
-      <span id="current-date">Ielādē datumu...</span><br />
+      <span id="current-date">Ielādē datumu...</span>
       <span id="current-time">Ielādē laiku...</span>
     </div>
   </header>
 
   <nav>
-    <a href="https://ropciko112.github.io/Laikrakstsanta/">Sākums</a>
-    <a href="https://ropciko112.github.io/Laikrakstsanta/docs/game.html">Spēle</a>
+    <div class="nav-container">
+      <a href="https://ropciko112.github.io/Laikrakstsanta/"><i class="fas fa-home"></i> Sākums</a>
+      <a href="https://ropciko112.github.io/Laikrakstsanta/docs/game.html"><i class="fas fa-gamepad"></i> Spēle</a>
+    </div>
   </nav>
 
-  <div class="gallery" id="gallery"></div>
+  <div class="main-container">
+    <div class="gallery-header">
+      <h2><i class="fas fa-smile"></i> Antas joku kolekcija</h2>
+      <p>Klikšķini uz attēla, lai redzētu to pilnā izmērā</p>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+  </div>
 
   <div class="overlay" id="overlay">
-    <img src="" alt="Pilnekrāna attēls" />
+    <div class="overlay-content">
+      <span class="overlay-close">&times;</span>
+      <img src="" alt="Pilnekrāna attēls" />
+    </div>
   </div>
 
   <footer>
-    <p>&copy; 2025 Antas dienas joku galerija. Visas tiesības aizsargātas.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Antas dienas joku galerija. Visas tiesības aizsargātas.</p>
+      <p>PS: Lapa ir domāta kā joks un nav jāuztver nopietni!</p>
+      
+      <div class="social-links">
+        <a href="https://www.facebook.com/anta.verdina" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anta-klepecka-ex-v%C4%93rdi%C5%86a-12b29459/overlay/about-this-profile/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script>
@@ -184,42 +389,69 @@
       "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/Ekrānuzņēmums%202025-01-20%20084723.png",
       "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/WhatsApp%20att%C4%93ls%202025-01-27%20plkst.%2013.02.49_6915ce2f.jpg",
       "https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/Image/9i5bnr.jpg"
-      
     ];
 
     const gallery = document.getElementById('gallery');
     const overlay = document.getElementById('overlay');
     const overlayImage = overlay.querySelector('img');
+    const overlayClose = overlay.querySelector('.overlay-close');
 
-    imageFiles.forEach(src => {
+    imageFiles.forEach((src, index) => {
+      const galleryItem = document.createElement('div');
+      galleryItem.className = 'gallery-item';
+      
       const img = document.createElement('img');
       img.src = src;
-      img.alt = "Joks";
-      img.addEventListener('click', () => {
+      img.alt = `Joks ${index + 1}`;
+      img.loading = "lazy";
+      
+      const caption = document.createElement('div');
+      caption.className = 'gallery-caption';
+      caption.textContent = `Joks #${index + 1}`;
+      
+      galleryItem.appendChild(img);
+      galleryItem.appendChild(caption);
+      
+      galleryItem.addEventListener('click', () => {
         overlayImage.src = src;
+        overlayImage.alt = `Joks ${index + 1}`;
         overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
       });
-      gallery.appendChild(img);
+      
+      gallery.appendChild(galleryItem);
     });
 
-    overlay.addEventListener('click', () => {
+    overlayClose.addEventListener('click', () => {
       overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
     });
 
-    function updateTimeAndDate() {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    function updateDateTime() {
       const now = new Date();
-      const hours = String(now.getHours()).padStart(2, '0');
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      const seconds = String(now.getSeconds()).padStart(2, '0');
-      const day = String(now.getDate()).padStart(2, '0');
-      const month = String(now.getMonth() + 1).padStart(2, '0');
-      const year = now.getFullYear();
-      document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
-      document.getElementById('current-date').textContent = `${day}.${month}.${year}`;
+      const options = { day: 'numeric', month: 'long', year: 'numeric' };
+      const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      
+      document.getElementById('current-date').textContent = now.toLocaleDateString('lv-LV', options);
+      document.getElementById('current-time').textContent = now.toLocaleTimeString('lv-LV', timeOptions);
     }
 
-    setInterval(updateTimeAndDate, 1000);
-    updateTimeAndDate();
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
   </script>
 </body>
 </html>
