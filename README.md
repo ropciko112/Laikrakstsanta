@@ -423,6 +423,9 @@
                     </div>
                     <div class="card-body">
                         <ul class="facts-list">
+                           <li><strong>Anta vienmēr saprot jokus, pat tad, kad tas nav joks.</strong></li>
+                            <li><strong>Anta vienmēr saprot jokus, pat tad, kad tas nav joks.</strong></li>
+                            <li><strong>Antai patīk novērtēt zeķu izskatu.</strong></li>
                             <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti.</strong></li>
                             <li><strong>Antai patīk, kad viņu kāds cenšas ievērt durvīs.</strong></li>
                             <li><strong>Antas mīļākais ēdiens ir medus kūka.</strong></li>
