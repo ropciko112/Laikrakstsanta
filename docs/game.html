@@ -217,7 +217,7 @@
             background-size: cover;
             background-position: center;
             z-index: 5;
-            transition: bottom 0.2s ease;
+            transition: bottom 0.15s ease;
         }
 
         #cactus {
@@ -430,44 +430,64 @@
         let cactusLeft = 900;
         let cactusPassed = false;
         let gameRunning = true;
+        let gameSpeed = 5; // Kustības ātrums
 
+        // Uzlabota lēkšanas funkcija
         function jump() {
             if (jumping || !gameRunning) return;
+            
             jumping = true;
-            let upInterval = setInterval(() => {
-                let dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
-                if (dinoBottom >= 150) {
-                    clearInterval(upInterval);
-                    let downInterval = setInterval(() => {
-                        dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
-                        if (dinoBottom <= 50) {
-                            clearInterval(downInterval);
-                            jumping = false;
-                        }
-                        dino.style.bottom = (dinoBottom - 5) + "px";
-                    }, 20);
+            let velocity = 15; // Sākotnējais ātrums uz augšu
+            let gravity = 0.8; // Gravitācijas spēks
+            let position = 50; // Sākotnējā pozīcija
+            
+            const jumpInterval = setInterval(() => {
+                // Pārvieto dinozauru
+                position += velocity;
+                velocity -= gravity;
+                
+                // Ja dinozaurs atgriežas atpakaļ zemē
+                if (position <= 50) {
+                    position = 50;
+                    clearInterval(jumpInterval);
+                    jumping = false;
                 }
-                dino.style.bottom = (dinoBottom + 5) + "px";
+                
+                dino.style.bottom = position + "px";
             }, 20);
         }
 
+        // Notikumu klausītāji
         document.addEventListener("keydown", event => {
-            if (event.code === "Space") jump();
+            if (event.code === "Space") {
+                event.preventDefault(); // Novērš lapas ritināšanu uz leju
+                jump();
+            }
         });
 
         document.addEventListener("click", jump);
         document.addEventListener("touchstart", jump);
 
+        // Kaktusa kustības funkcija
         function moveCactus() {
             if (!gameRunning) return;
             
-            cactusLeft -= 5;
+            cactusLeft -= gameSpeed;
+            
+            // Ja kaktuss ir aizgājis ārā no ekrāna, atgriež to atpakaļ
             if (cactusLeft < -50) {
                 cactusLeft = 900;
                 cactusPassed = false;
+                
+                // Pakāpeniski palielina ātrumu
+                if (score % 5 === 0 && gameSpeed < 12) {
+                    gameSpeed += 0.5;
+                }
             }
+            
             cactus.style.left = cactusLeft + "px";
 
+            // Punktu skaitīšana
             if (cactusLeft < 50 && cactusLeft > 0 && !cactusPassed) {
                 score++;
                 scoreDisplay.textContent = `Punkti: ${score}`;
@@ -475,13 +495,18 @@
             }
         }
 
+        // Sadursmes pārbaude
         function checkCollision() {
             if (!gameRunning) return;
             
-            const dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
-            const cactusLeftPosition = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-
-            if (cactusLeftPosition > 20 && cactusLeftPosition < 80 && dinoBottom <= 50) {
+            const dinoRect = dino.getBoundingClientRect();
+            const cactusRect = cactus.getBoundingClientRect();
+            
+            // Vienkāršota sadursmes pārbaude
+            if (dinoRect.right > cactusRect.left + 10 && 
+                dinoRect.left < cactusRect.right - 10 && 
+                dinoRect.top < cactusRect.bottom - 5) {
+                
                 gameRunning = false;
                 setTimeout(() => {
                     const restart = confirm(`Spēle beigusies! Tu ieguvi ${score} punktus. Vai vēlies spēlēt vēlreiz?`);
@@ -492,8 +517,10 @@
             }
         }
 
+        // Spēles atiestatīšana
         function resetGame() {
             score = 0;
+            gameSpeed = 5;
             scoreDisplay.textContent = `Punkti: ${score}`;
             cactusLeft = 900;
             cactus.style.left = cactusLeft + "px";
@@ -502,10 +529,15 @@
             gameRunning = true;
         }
 
-        setInterval(() => {
+        // Spēles galvenā cilpa
+        function gameLoop() {
             moveCactus();
             checkCollision();
-        }, 20);
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Startēt spēles cilpu
+        gameLoop();
 
         // Datuma un laika ielāde
         function updateDateTime() {
