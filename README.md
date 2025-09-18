@@ -396,6 +396,9 @@
             <div class="main-content">
                 <!-- Vārda diena Section -->
                 <div class="card">
+                    <div class="card-header">
+                        <h3><i class="?"></i> Ticējumi par Antu</h3>
+                    </div>
                     <div class="card-body">
                         <ul class="facts-list">
                             <li><strong>Ja Anta ieiet virtuvē un nopūšas, tad ledusskapī pašā no sevis pazūd siers.</strong></li>
