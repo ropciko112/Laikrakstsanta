@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -382,49 +383,44 @@
 
     <div class="main-container">
         <div class="content-grid">
-            <!-- Audio Player Section -->
+            <!-- Audio Player Sections -->
             <div class="card audio-player">
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Antas piedzīvojumi"</h3>
                     <audio controls>
-                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Antas%20piedz%C4%ABvojumi.mp3%20(1)" type="audio/mpeg">
+                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Antas%20piedz%C4%ABvojumi.mp3" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
                 </div>
             </div>
-            <div class="main-container">
-        <div class="content-grid">
-            <!-- Audio Player Section -->
+            
             <div class="card audio-player">
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Anta! Kur tu pazudi"</h3>
                     <audio controls>
-                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
+                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
                 </div>
             </div>
 
             <div class="main-content">
-                <!-- Vārda diena Section -->
+                <!-- Ticējumi par Antu Section -->
                 <div class="card">
                     <div class="card-header">
-                        <h3><i class="?"></i> Ticējumi par Antu</h3>
+                        <h3><i class="fas fa-book"></i> Ticējumi par Antu</h3>
                     </div>
                     <div class="card-body">
                         <ul class="facts-list">
                             <li><strong>Ja Anta ieiet virtuvē un nopūšas, tad ledusskapī pašā no sevis pazūd siers.</strong></li>
-                            <li><strong>Ja Anta pasaka “ātri būšu atpakaļ”, tad zini – viņa atgriezīsies tikai tad, kad mēness būs nomainījis fāzi.</strong></li>
-                            <li><strong>Ja Anta apsēžas uz dīvāna “tikai uz minūti”, tad televizora pults noslēpumaini pazūd.</strong></li>
-                            <li><strong>Ja Anta nolemj “neēst saldumus”, tad veikalā tieši tajā dienā ir atlaides uz šokolādi.</strong></li>
-                            <li><strong>Ja Anta paskatās uz pulksteni un saka: “Ak, vēl daudz laika!”, tad noteikti jau ir par vēlu..</strong></li>
+                            <li><strong>Ja Anta pasaka "ātri būšu atpakaļ", tad zini – viņa atgriezīsies tikai tad, kad mēness būs nomainījis fāzi.</strong></li>
+                            <li><strong>Ja Anta apsēžas uz dīvāna "tikai uz minūti", tad televizora pults noslēpumaini pazūd.</strong></li>
+                            <li><strong>Ja Anta nolemj "neēst saldumus", tad veikalā tieši tajā dienā ir atlaides uz šokolādi.</strong></li>
+                            <li><strong>Ja Anta paskatās uz pulksteni un saka: "Ak, vēl daudz laika!", tad noteikti jau ir par vēlu.</strong></li>
                             <li><strong>Ja Anta piezvana, tad telefons kā minimums 2 reizes nogāžas no galda pats no sevis.</strong></li>
-                            <li><strong>Ja Anta saka “Es uz īsu brīdi”, tad tad kā minimums uz 1H.</strong></li>
+                            <li><strong>Ja Anta saka "Es uz īsu brīdi", tad kā minimums uz 1H.</strong></li>
                             <li><strong>Ja Anta iesmejas, tad tuvākās 3 mājas suņi momentā pamostas un sāk prasīt ēst.</strong></li>
                         </ul>
-                    </div>
-                    <div class="card-body">
-                        <p> <strong>  </strong>.</p>
                     </div>
                 </div>
 
@@ -435,7 +431,6 @@
                     </div>
                     <div class="card-body">
                         <ul class="facts-list">
-                           <li><strong>Anta vienmēr saprot jokus, pat tad, kad tas nav joks.</strong></li>
                             <li><strong>Anta vienmēr saprot jokus, pat tad, kad tas nav joks.</strong></li>
                             <li><strong>Antai patīk novērtēt zeķu izskatu.</strong></li>
                             <li><strong>Antu un Juri IVP kopā sauc par saldo pārīti.</strong></li>
@@ -511,7 +506,12 @@
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=lv`;
 
             fetch(apiUrl)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Tīkla kļūda');
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     if (data.main) {
                         weatherElement.textContent = data.weather[0].description;
@@ -539,9 +539,11 @@
         }
 
         // Initialize functions
-        setInterval(updateTimeAndDate, 1000);
-        updateTimeAndDate();
-        getWeather();
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTimeAndDate();
+            setInterval(updateTimeAndDate, 1000);
+            getWeather();
+        });
     </script>
 </body>
 </html>
