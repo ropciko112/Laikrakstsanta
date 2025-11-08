@@ -196,6 +196,13 @@
             border-radius: 30px;
         }
 
+        .audio-note {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
         /* Facts List */
         .facts-list {
             list-style: none;
@@ -388,9 +395,11 @@
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Antas piedzīvojumi"</h3>
                     <audio controls>
-                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Antas%20piedz%C4%ABvojumi.mp3%20(1)" type="audio/mpeg">
+                        <!-- Atgriežam atpakaļ oriģinālo saiti, kas strādāja -->
+                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Antas%20piedz%C4%ABvojumi.mp3%20(1)" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
+                    <p class="audio-note">Ja dziesma neatskaņojas, lejupielādējiet to no <a href="https://github.com/ropciko112/Laikrakstsanta" target="_blank">GitHub</a></p>
                 </div>
             </div>
             
@@ -398,9 +407,11 @@
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Anta! Kur tu pazudi"</h3>
                     <audio controls>
+                        <!-- Atgriežam atpakaļ oriģinālo saiti -->
                         <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
+                    <p class="audio-note">Ja dziesma neatskaņojas, lejupielādējiet to no <a href="https://github.com/ropciko112/Laikrakstsanta" target="_blank">GitHub</a></p>
                 </div>
             </div>
 
