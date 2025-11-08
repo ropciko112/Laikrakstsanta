@@ -388,7 +388,7 @@
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Antas piedzīvojumi"</h3>
                     <audio controls>
-                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Antas%20piedz%C4%ABvojumi.mp3" type="audio/mpeg">
+                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Antas%20piedz%C4%ABvojumi.mp3%20(1)" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
                 </div>
@@ -398,7 +398,7 @@
                 <div class="card-body">
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Anta! Kur tu pazudi"</h3>
                     <audio controls>
-                        <source src="https://raw.githubusercontent.com/ropciko112/Laikrakstsanta/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
+                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
                 </div>
