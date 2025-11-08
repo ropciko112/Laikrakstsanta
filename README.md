@@ -408,7 +408,7 @@
                     <h3><i class="fas fa-music"></i> Klausies dziesmu "Anta! Kur tu pazudi"</h3>
                     <audio controls>
                         <!-- Atgriežam atpakaļ oriģinālo saiti -->
-                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Anta%20Kur%20tu%20pazudi_.mp3" type="audio/mpeg">
+                        <source src="https://github.com/ropciko112/Laikrakstsanta/blob/main/docs/Anta!%20Kur%20tu%20pazudi.mp3" type="audio/mpeg">
                         Jūsu pārlūkprogramma neatbalsta audio atskaņošanu.
                     </audio>
                     <p class="audio-note">Ja dziesma neatskaņojas, lejupielādējiet to no <a href="https://github.com/ropciko112/Laikrakstsanta" target="_blank">GitHub</a></p>
